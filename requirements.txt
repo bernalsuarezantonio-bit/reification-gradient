@@ -1,0 +1,6 @@
+pyyaml>=6
+pandas>=2
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3   # lingsign_hook separability classifier
+# statsmodels>=0.14  # uncomment for confirmatory mixed-effects models

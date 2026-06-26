@@ -1,0 +1,9 @@
+data/raw/
+data/scored/
+# keep the empty data dirs in the tree so the scaffold survives a clone
+!data/raw/.gitkeep
+!data/scored/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+venv/

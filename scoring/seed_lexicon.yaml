@@ -1,0 +1,81 @@
+# scoring/seed_lexicon.yaml
+# Anti-circularity lexical reference. Two roles:
+#  (1) forbidden_symptom_terms: MUST NOT appear in any seed (materials/disorders.yaml).
+#      check_invariants.py fails the build if any seed contains one of these.
+#  (2) seed_allowed_terms: the controlled vocabulary that the seeds ARE allowed to use.
+#      Anything symptom-like in a model response that is NOT in the seed payload counts as
+#      EMERGENT (-> emergent_symptom_tokens). This is how parroting is separated from fabrication.
+#
+# Keep this list in the experiment's language (ES here). Mirror for EN replication.
+
+# ---------------------------------------------------------------------------
+# (1) Terms that betray pre-committed symptomatology. Banned from seeds.
+forbidden_symptom_terms:
+  - síntoma
+  - síntomas
+  - criterio
+  - criterios
+  - diagnóstico
+  - diagnosticar
+  - prevalencia
+  - curso
+  - episodio
+  - episodios
+  - duración
+  - deterioro
+  - malestar clínicamente significativo
+  - comorbilidad
+  - tratamiento
+  - pronóstico
+  - severidad
+  - remisión
+  - recaída
+  # symptom-content words a DSM-style entry would commit to:
+  - insomnio
+  - anhedonia
+  - rumiación
+  - ansiedad
+  - tristeza
+  - culpa
+  - desesperanza
+  - fatiga
+  - concentración
+
+# ---------------------------------------------------------------------------
+# (2) Vocabulary the minimal seeds may legitimately contain (process/upstream language).
+seed_allowed_terms:
+  - relato
+  - autobiográfico
+  - hilo
+  - narrativa
+  - carga afectiva
+  - regulación
+  - experiencia
+  - entorno
+  - condición
+  - alteración
+  - propuesta
+
+# ---------------------------------------------------------------------------
+# (3) Symptom-lexicon used by score.py to TAG emergent tokens in responses.
+# (Overlaps deliberately with forbidden_symptom_terms: if these show up in OUTPUT they are
+#  emergent reification; if they showed up in a SEED the build would have failed.)
+emergent_symptom_lexicon:
+  - síntoma
+  - criterio
+  - episodio
+  - insomnio
+  - anhedonia
+  - rumiación
+  - ansiedad
+  - tristeza
+  - culpa
+  - desesperanza
+  - fatiga
+  - concentración
+  - irritabilidad
+  - evitación
+  - disociación
+  - flashback
+  - hipervigilancia
+  - apatía
