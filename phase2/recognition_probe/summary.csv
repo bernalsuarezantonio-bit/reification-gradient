@@ -1,0 +1,11 @@
+model,item_key,item_name,is_real,n,recognized,confabulated,not_recognized,empty,error,recognized_rate,not_recognized_rate,confabulated_rate
+ollama_remote/mistral-small3.1:24b,DN,disprosexia narrativa,False,30,0,8,22,0,0,0.0,0.73,0.27
+ollama_remote/mistral-small3.1:24b,anchor_dpdr,trastorno de despersonalización-desrealización,True,30,20,0,10,0,0,0.67,0.33,0.0
+ollama_remote/mistral-small3.1:24b,anchor_ganser,síndrome de Ganser,True,30,29,0,1,0,0,0.97,0.03,0.0
+ollama_remote/mistral-small3.1:24b,anchor_paramnesia,paramnesia reduplicativa,True,30,27,0,3,0,0,0.9,0.1,0.0
+ollama_remote/mistral-small3.1:24b,incoherent,síndrome de regresión alotrópica vespertina,False,30,0,1,29,0,0,0.0,0.97,0.03
+ollama_remote/qwen2.5:32b,DN,disprosexia narrativa,False,30,0,3,27,0,0,0.0,0.9,0.1
+ollama_remote/qwen2.5:32b,anchor_dpdr,trastorno de despersonalización-desrealización,True,30,21,0,9,0,0,0.7,0.3,0.0
+ollama_remote/qwen2.5:32b,anchor_ganser,síndrome de Ganser,True,30,29,0,1,0,0,0.97,0.03,0.0
+ollama_remote/qwen2.5:32b,anchor_paramnesia,paramnesia reduplicativa,True,30,30,0,0,0,0,1.0,0.0,0.0
+ollama_remote/qwen2.5:32b,incoherent,síndrome de regresión alotrópica vespertina,False,30,0,1,29,0,0,0.0,0.97,0.03

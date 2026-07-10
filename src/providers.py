@@ -75,7 +75,8 @@ def _http_post_json(url: str, payload: dict, headers: dict,
 
 
 def _query_ollama_remote(model_name: str, prompt: str, temperature: float,
-                         timeout: int, max_retries: int, system: str | None) -> str:
+                         timeout: int, max_retries: int, system: str | None,
+                         max_tokens: int | None) -> str:
     base = os.environ.get("OLLAMA_BASE_URL")
     if not base:
         raise ProviderError("OLLAMA_BASE_URL not set (put it in .env / the environment)")
@@ -83,11 +84,14 @@ def _query_ollama_remote(model_name: str, prompt: str, temperature: float,
     if system:
         messages.append({"role": "system", "content": system})
     messages.append({"role": "user", "content": prompt})
+    options = {"temperature": temperature}
+    if max_tokens is not None:
+        options["num_predict"] = max_tokens
     payload = {
         "model": model_name,
         "messages": messages,
         "stream": False,
-        "options": {"temperature": temperature},
+        "options": options,
     }
     data = _http_post_json(base.rstrip("/") + "/api/chat", payload, {},
                            timeout=timeout, max_retries=max_retries)
@@ -98,13 +102,14 @@ def _query_ollama_remote(model_name: str, prompt: str, temperature: float,
 
 
 def _query_anthropic(model_name: str, prompt: str, temperature: float,
-                     timeout: int, max_retries: int, system: str | None) -> str:
+                     timeout: int, max_retries: int, system: str | None,
+                     max_tokens: int | None) -> str:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         raise ProviderError("ANTHROPIC_API_KEY not set")
     payload = {
         "model": model_name,
-        "max_tokens": 1024,
+        "max_tokens": max_tokens or 1024,
         "temperature": temperature,
         "messages": [{"role": "user", "content": prompt}],
     }
@@ -121,7 +126,8 @@ def _query_anthropic(model_name: str, prompt: str, temperature: float,
 
 
 def _query_openai(model_name: str, prompt: str, temperature: float,
-                  timeout: int, max_retries: int, system: str | None) -> str:
+                  timeout: int, max_retries: int, system: str | None,
+                  max_tokens: int | None) -> str:
     key = os.environ.get("OPENAI_API_KEY")
     if not key:
         raise ProviderError("OPENAI_API_KEY not set")
@@ -130,6 +136,8 @@ def _query_openai(model_name: str, prompt: str, temperature: float,
         messages.append({"role": "system", "content": system})
     messages.append({"role": "user", "content": prompt})
     payload = {"model": model_name, "temperature": temperature, "messages": messages}
+    if max_tokens is not None:
+        payload["max_tokens"] = max_tokens
     headers = {"Authorization": f"Bearer {key}"}
     data = _http_post_json("https://api.openai.com/v1/chat/completions", payload, headers,
                            timeout=timeout, max_retries=max_retries)
@@ -148,7 +156,7 @@ _PROVIDERS = {
 
 def query_model(model_id: str, prompt: str, temperature: float = 0.7, *,
                 timeout: int = DEFAULT_TIMEOUT, max_retries: int = DEFAULT_MAX_RETRIES,
-                system: str | None = None) -> str:
+                system: str | None = None, max_tokens: int | None = None) -> str:
     """Dispatch `provider/model_name` to the right backend and return the response text."""
     load_env()
     if "/" not in model_id:
@@ -159,4 +167,4 @@ def query_model(model_id: str, prompt: str, temperature: float = 0.7, *,
     fn = _PROVIDERS.get(provider)
     if fn is None:
         raise ProviderError(f"unknown provider '{provider}'; known: {sorted(_PROVIDERS)}")
-    return fn(model_name, prompt, temperature, timeout, max_retries, system)
+    return fn(model_name, prompt, temperature, timeout, max_retries, system, max_tokens)

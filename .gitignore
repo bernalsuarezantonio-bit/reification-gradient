@@ -13,3 +13,6 @@ venv/
 
 # secrets / local endpoints (never commit; .env.example is the tracked template)
 .env
+
+# phase2 operational logs (progress spam, not study artifacts)
+phase2/*.log
