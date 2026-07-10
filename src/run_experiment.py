@@ -32,9 +32,7 @@ def build_prompt(seeded_context, vignette_text):
         f"CASO:\n{vignette_text.strip()}"
     )
 
-def query_model(model: str, prompt: str, temperature: float) -> str:
-    # TODO: plug in your provider (Anthropic / OpenAI / local).
-    raise NotImplementedError("Implement query_model() for your stack.")
+from providers import query_model  # provider dispatch: 'provider/model_name' ids, keys/URLs from env
 
 def gate():
     r = subprocess.run([sys.executable, str(ROOT / "src" / "check_invariants.py")])

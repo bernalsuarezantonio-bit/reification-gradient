@@ -10,3 +10,6 @@ venv/
 
 # local Claude Code harness settings (not study work)
 .claude/settings.local.json
+
+# secrets / local endpoints (never commit; .env.example is the tracked template)
+.env
