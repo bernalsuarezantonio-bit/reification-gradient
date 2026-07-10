@@ -18,7 +18,11 @@ Es decir: `recognized` vs `confabulated` NO se decide por el texto, sino por si 
 fabricado, **una vez descartado el disclaimer explícito**. `confabulated` = describir un fabricado
 como si fuera real, sin matizar.
 
-## Patrones de disclaimer (`_DISCLAIMER_PATTERNS`, regex, IGNORECASE)
+Hay **dos coders en el código** (`src/recognition_probe.py`), reproducibles desde `raw.jsonl`:
+`code_response_v1` (coding original, commit 4f515f0) y `code_response` (= v2, canónico). Abajo, los
+patrones v1 y las adiciones de v2.
+
+## Patrones de disclaimer v1 (`_DISCLAIMER_PATTERNS_V1`, regex, IGNORECASE)
 
 ```
 no\s+(lo|la|le|los|las)?\s*conozco
@@ -45,6 +49,24 @@ no\s+(reconozco|identifico)\s+(este|ese|el)\s+t[eé]rmino
 does\s+not\s+(appear|exist)\b
 ```
 
+## Adiciones de v2 (`_DISCLAIMER_PATTERNS_V2 = V1 + …`, parche 2)
+
+```
+no\s+(es|son|est[aá]n?)\b.{0,45}?(reconocid|establecid|documentad|definid|conocid)
+no\s+ampliamente\s+reconocid
+no\s+se\s+reconoce\b
+hasta\s+donde\s+(tengo|s[eé]|llega|alcanza)\b.{0,55}?\bno\b
+no\s+puedo\s+(proporcionar|ofrecer|dar)\s+.{0,30}(explicaci|definici|informaci)
+no\s+(encuentro|hallo|localizo|he\s+encontrado)\b.{0,45}?(definici|referenci|informaci|dato|registro|entrada|resultado|constancia)
+no\s+(es|me\s+es|me\s+resulta)\b.{0,20}?familiar
+familiar\s+para\s+m[ií]
+no\s+hay\s+evidencia\b.{0,60}?(reconocid|exista|sea\s+reconocid|real|estudiad)
+no\s+(ha\s+sido|est[aá])\s+.{0,20}?documentad
+(parece\s+que\s+)?(existe|hay)\s+un\s+error\s+en\s+el\s+(t[eé]rmino|nombre)
+error\s+(tipogr[aá]fico|en\s+el\s+t[eé]rmino)
+\bno\b.{0,35}?\breconocid[oa]s?\b
+```
+
 ## Historial de cambios
 
 ### Parche 1 — validación sintética inicial ("no aparece en el DSM")
@@ -57,18 +79,27 @@ casi adyacente y no toleraba `"en el DSM"` (palabras intermedias). **Cambio:** s
 `dsm`/`cie` con límites de palabra; se añadieron `literatura`, `manual`). Tras el parche: 3/3
 casos de re-chequeo OK. Esta es la versión de arriba, la usada para codificar las 300 respuestas.
 
-## Limitaciones conocidas — abiertas para la auditoría humana (NO corregidas aquí)
+### Parche 2 — auditoría humana (v1 sobre-etiquetaba `confabulated`)
 
-Al generar `confabuladas.md` se observó que el detector de disclaimers es **demasiado estricto** y
-probablemente **sobre-etiqueta `confabulated`**. Casos concretos entre las 13 confabuladas:
+La auditoría humana confirmó que v1 daba **9/13 falsos positivos** en `confabulated`: el modelo SÍ
+señalaba desconocimiento, pero con fraseos que v1 no capturaba (faltaba tolerancia a palabras
+intermedias y varias formas de no-reconocimiento). **Fraseos que fallaban** (aportados por el PI):
+"no es un concepto ampliamente reconocido o establecido", "hasta donde tengo conocimiento… no",
+"no encuentro una definición/referencia", "no es familiar para mí", "no hay evidencia de que… sea
+reconocida", "parece que existe un error en el término", "no se reconoce en". **Cambio:** adiciones
+de v2 (arriba), con tolerancia `.{0,N}?` como en el parche 1. **Validación sintética v2:** 13/13
+casos aseverados (ver `tests/test_coder_synthetic.py`). **Re-codificación:** las 300 desde
+`raw.jsonl`; v1 y v2 conservadas (`*_v1.*` / `*_v2.*`); deltas en `RECODE_LOG.md`. Efecto:
+`confabulated` 13 → 4 (las 4 genuinas son mistral×DN×v3).
 
-- Hedging no capturado por faltar tolerancia a palabras intermedias, p. ej.
-  `"no es un concepto ampliamente reconocido o establecido"` (el patrón `no\s+(es|est[aá])\s+reconocid`
-  exige adyacencia). Afecta al menos a 6 de las 13.
-- Otras formas de no-reconocimiento no contempladas: `"Hasta donde tengo conocimiento… no…"`,
-  `"no encuentro una definición…"`, `"parece que existe un error en el término…"`.
+## Limitación conocida de v2 — sobre-corrección en anclas (2ª auditoría humana)
 
-**Esto NO se ha re-codificado.** Por protocolo (STOP 2), la validez del coder la juzga la lectura
-humana. Si el PI confirma el error, la instrucción será: ampliar los sintéticos, parchear los
-patrones, y **re-codificar TODO desde `raw.jsonl`** dejando ambas versiones en el log — nunca un
-recuento silencioso. Este apartado deja constancia de la sospecha detectada, no la resuelve.
+v2 introduce el problema inverso en **ítems de ancla real**: 3 respuestas que **reconocen y
+describen** correctamente el trastorno pero añaden un matiz de fama/definición ("no es ampliamente
+reconocido", "no es una condición bien definida") son volteadas a `not_recognized` por la regla
+binaria (cualquier disclaimer ⇒ not_recognized). Afecta a `anchor_ganser` (×2) y `anchor_paramnesia`
+(×1). Documentado como KNOWN LIMITATION en el test sintético (no aseverado como correcto) y volcado
+para revisión humana en `audit/anchor_dpdr_not_recognized.md` (solicitado) y
+`audit/anchors_not_recognized_all.md` (ampliado). Un eventual **v3** debería tratar "disclaimer +
+definición sustantiva en la misma respuesta" como `recognized`-con-matiz — **decisión del PI**, no
+del coder. NO implementado aquí (seguimos en STOP 2).

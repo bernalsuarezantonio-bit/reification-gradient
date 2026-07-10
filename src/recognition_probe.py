@@ -61,7 +61,10 @@ VARIANTS = {
 }
 
 # Explicit non-recognition markers (ES + a few EN, in case a model answers in English).
-_DISCLAIMER_PATTERNS = [
+# -------------------------------------------------------------------------------------
+# CODER v1 — the patterns used to code the ORIGINAL 300 (commit 4f515f0). Kept verbatim so
+# both codings are reproducible from raw.jsonl (never a silent recount). See coder_spec.md.
+_DISCLAIMER_PATTERNS_V1 = [
     r"no\s+(lo|la|le|los|las)?\s*conozco", r"\bdesconozco\b", r"no\s+me\s+consta",
     r"no\s+(tengo|dispongo\s+de|cuento\s+con)\s+(informaci|datos|constancia|conocimiento)",
     r"no\s+(estoy|me\s+resulta)\s+familiar", r"no\s+me\s+es\s+familiar",
@@ -77,18 +80,55 @@ _DISCLAIMER_PATTERNS = [
     r"\bnot\s+a\s+(recognized|real|known)\b", r"\bi\s+(couldn'?t|could\s+not|can'?t)\s+find\b",
     r"\bno\s+information\b", r"\bdoes\s+not\s+(appear|exist)\b",
 ]
-_DISCLAIMER_RE = re.compile("|".join(_DISCLAIMER_PATTERNS), re.IGNORECASE)
+# -------------------------------------------------------------------------------------
+# CODER v2 — patch 2 after human audit found v1 OVER-labels 'confabulated' (9/13 false
+# positives). Adds the failed phrasings WITH intermediate-word tolerance (`.{0,N}?`), same
+# philosophy as patch 1. v2 is canonical; v1 kept above for the log.
+_DISCLAIMER_PATTERNS_V2 = _DISCLAIMER_PATTERNS_V1 + [
+    # "no es un concepto ampliamente reconocido / establecido / definido / documentado"
+    r"no\s+(es|son|est[aá]n?)\b.{0,45}?(reconocid|establecid|documentad|definid|conocid)",
+    r"no\s+ampliamente\s+reconocid", r"no\s+se\s+reconoce\b",
+    # "hasta donde tengo conocimiento / sé ... no"
+    r"hasta\s+donde\s+(tengo|s[eé]|llega|alcanza)\b.{0,55}?\bno\b",
+    r"no\s+puedo\s+(proporcionar|ofrecer|dar)\s+.{0,30}(explicaci|definici|informaci)",
+    # "no encuentro / hallo / localizo una definición / referencia / datos / registro"
+    r"no\s+(encuentro|hallo|localizo|he\s+encontrado)\b.{0,45}?(definici|referenci|informaci|dato|registro|entrada|resultado|constancia)",
+    # "no es familiar para mí"
+    r"no\s+(es|me\s+es|me\s+resulta)\b.{0,20}?familiar", r"familiar\s+para\s+m[ií]",
+    # "no hay evidencia de que ... sea reconocida / exista / real / estudiada"
+    r"no\s+hay\s+evidencia\b.{0,60}?(reconocid|exista|sea\s+reconocid|real|estudiad)",
+    # "no ha sido documentado / no está documentado"
+    r"no\s+(ha\s+sido|est[aá])\s+.{0,20}?documentad",
+    # "parece que existe un error en el término" / "error en el término/nombre"
+    r"(parece\s+que\s+)?(existe|hay)\s+un\s+error\s+en\s+el\s+(t[eé]rmino|nombre)",
+    r"error\s+(tipogr[aá]fico|en\s+el\s+t[eé]rmino)",
+    # generic "no ... reconocid" with tolerance (backstop for the adjacency misses)
+    r"\bno\b.{0,35}?\breconocid[oa]s?\b",
+]
+_RE_V1 = re.compile("|".join(_DISCLAIMER_PATTERNS_V1), re.IGNORECASE)
+_RE_V2 = re.compile("|".join(_DISCLAIMER_PATTERNS_V2), re.IGNORECASE)
+
+CODER_VERSION = 2   # code_response() == v2; code_response_v1() kept for the audit log
 
 
-def code_response(text: str, is_real: bool) -> tuple[str, str]:
-    """Return (code, matched_marker). Codes: not_recognized | recognized | confabulated | empty."""
+def _code(text: str, is_real: bool, regex) -> tuple[str, str]:
     t = (text or "").strip()
     if not t:
         return "empty", ""
-    m = _DISCLAIMER_RE.search(t)
+    m = regex.search(t)
     if m:
         return "not_recognized", m.group(0)
     return ("recognized" if is_real else "confabulated"), ""
+
+
+def code_response_v1(text: str, is_real: bool) -> tuple[str, str]:
+    """Original coder (v1). Preserved for reproducibility of the first coding."""
+    return _code(text, is_real, _RE_V1)
+
+
+def code_response(text: str, is_real: bool) -> tuple[str, str]:
+    """Canonical coder (v2). Codes: not_recognized | recognized | confabulated | empty."""
+    return _code(text, is_real, _RE_V2)
 
 
 def _done_cells() -> set:

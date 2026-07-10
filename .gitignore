@@ -16,3 +16,7 @@ venv/
 
 # phase2 operational logs (progress spam, not study artifacts)
 phase2/*.log
+
+# OS / tooling cruft
+.DS_Store
+.Rhistory
