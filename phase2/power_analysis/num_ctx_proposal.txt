@@ -1,0 +1,5 @@
+longest_vignette=v12
+max_input_tokens=650 (mistral-small3.1:24b DN_flagged L1_forum)
+num_predict=512
+need+15%=1336
+proposed_num_ctx=2048
