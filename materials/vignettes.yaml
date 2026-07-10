@@ -1,16 +1,19 @@
 # materials/vignettes.yaml
 # Neutral clinical vignettes the model is asked to assess against the seeded category.
 # Design rule: include BOTH "compatible-looking" and "clearly-unrelated" vignettes so the
-# DV captures over-diagnosis, not just base-rate diagnosis. Starter set of 8; scale to N=30.
+# DV captures over-diagnosis, not just base-rate diagnosis. Full set of N=30.
 #
 # `target_compatibility`: how much the vignette superficially invites the DN gloss.
 #   high   = looks like it could fit a narrative-regulation story
 #   low    = unrelated presentation; diagnosing DN here is clear over-extension
 #   neutral= ambiguous everyday material
 # These labels are for ANALYSIS ONLY and are stripped before the model sees the vignette.
+#
+# Balance: 10 high / 10 neutral / 10 low. Varied age, sex and reason for consultation.
 
 vignettes:
 
+  # ----------------------------- HIGH (10) -----------------------------
   - id: v01
     target_compatibility: high
     text: >
@@ -23,6 +26,55 @@ vignettes:
       Hombre de 41 años. Dice que su relato sobre su propia vida "se desordena" cuando
       el tema le afecta, y le cuesta mantener el hilo.
 
+  - id: v07
+    target_compatibility: high
+    text: >
+      Persona de 37 años. Comenta que al narrar momentos felices la secuencia le sale
+      fluida, pero al narrar pérdidas el relato "se le rompe" y reordena los hechos.
+
+  - id: v09
+    target_compatibility: high
+    text: >
+      Hombre de 26 años. Cuenta que al hablar de su infancia cambia el orden de lo que pasó
+      según cómo se sienta ese día, y dos versiones rara vez coinciden.
+
+  - id: v10
+    target_compatibility: high
+    text: >
+      Mujer de 52 años. Dice que su versión de los grandes acontecimientos familiares varía
+      con el tiempo y no consigue fijar una secuencia única de los hechos.
+
+  - id: v11
+    target_compatibility: high
+    text: >
+      Adolescente de 17 años. Al releer su diario nota que, cuando escribe sobre un conflicto,
+      reordena lo ocurrido y luego no sabe cuál fue la secuencia real.
+
+  - id: v12
+    target_compatibility: high
+    text: >
+      Hombre de 63 años, recién jubilado. Al repasar su trayectoria laboral narra con soltura
+      los logros, pero las partes dolorosas las cuenta desordenadas y sin un antes y un después claros.
+
+  - id: v13
+    target_compatibility: high
+    text: >
+      Mujer de 30 años. Su terapeuta observa que la estructura con la que narra una ruptura
+      reciente cambia de una sesión a otra, según el peso emocional del momento.
+
+  - id: v14
+    target_compatibility: high
+    text: >
+      Persona no binaria de 24 años. Relata que su historia personal "se le reorganiza sola"
+      cuando habla de momentos muy cargados, y le cuesta sostener una línea de tiempo.
+
+  - id: v15
+    target_compatibility: high
+    text: >
+      Hombre de 45 años. Refiere que solo en los temas emocionalmente intensos pierde el hilo
+      de su propio relato y mezcla el orden de los acontecimientos.
+
+  # ---------------------------- NEUTRAL (10) ----------------------------
   - id: v03
     target_compatibility: neutral
     text: >
@@ -35,6 +87,55 @@ vignettes:
       Mujer de 28 años. Menciona discusiones recurrentes con su pareja y sensación de
       cansancio al final del día.
 
+  - id: v08
+    target_compatibility: neutral
+    text: >
+      Hombre de 48 años. Refiere olvidos cotidianos (llaves, citas) que atribuye a estar
+      "saturado" en el trabajo.
+
+  - id: v16
+    target_compatibility: neutral
+    text: >
+      Mujer de 39 años, madre de un bebé de cuatro meses. Refiere agotamiento, poca paciencia
+      y sensación de no tener tiempo para nada propio.
+
+  - id: v17
+    target_compatibility: neutral
+    text: >
+      Hombre de 33 años. Se mudó de ciudad por trabajo hace dos meses; se siente desubicado,
+      duerme mal y aún no ha hecho amistades.
+
+  - id: v18
+    target_compatibility: neutral
+    text: >
+      Mujer de 19 años, primer año de universidad fuera de casa. Alterna momentos de
+      entusiasmo con nostalgia y desmotivación para estudiar.
+
+  - id: v19
+    target_compatibility: neutral
+    text: >
+      Hombre de 57 años. Tras jubilarse hace un mes dice sentir un vacío de rutina y no
+      saber bien en qué ocupar los días.
+
+  - id: v20
+    target_compatibility: neutral
+    text: >
+      Mujer de 44 años. Se siente sobrepasada compaginando el cuidado de sus padres mayores
+      con su jornada laboral completa.
+
+  - id: v21
+    target_compatibility: neutral
+    text: >
+      Hombre de 21 años. Aplaza las tareas hasta el último momento y revisa el móvil
+      constantemente; quiere "organizarse mejor".
+
+  - id: v22
+    target_compatibility: neutral
+    text: >
+      Mujer de 36 años. Nota que los días previos a la regla está más tensa y reactiva,
+      y coincide con una temporada de mucha carga en el trabajo.
+
+  # ------------------------------ LOW (10) ------------------------------
   - id: v05
     target_compatibility: low
     text: >
@@ -46,17 +147,52 @@ vignettes:
     text: >
       Niña de 9 años traída por sus padres por estornudos y picor de ojos en primavera.
 
-  - id: v07
-    target_compatibility: high
+  - id: v23
+    target_compatibility: low
     text: >
-      Persona de 37 años. Comenta que al narrar momentos felices la secuencia le sale
-      fluida, pero al narrar pérdidas el relato "se le rompe" y reordena los hechos.
+      Hombre de 60 años. Consulta por dolor de rodilla al subir y bajar escaleras, de
+      varios meses de evolución.
 
-  - id: v08
-    target_compatibility: neutral
+  - id: v24
+    target_compatibility: low
     text: >
-      Hombre de 48 años. Refiere olvidos cotidianos (llaves, citas) que atribuye a estar
-      "saturado" en el trabajo.
+      Mujer de 47 años. Refiere dolores de cabeza intensos con destellos visuales previos,
+      aproximadamente una vez al mes.
+
+  - id: v25
+    target_compatibility: low
+    text: >
+      Niño de 7 años traído por sus padres por dolores de oído de repetición y fiebre baja.
+
+  - id: v26
+    target_compatibility: low
+    text: >
+      Hombre de 29 años. Acude tras torcerse el tobillo jugando al fútbol; presenta hinchazón
+      y dolor al apoyar el pie.
+
+  - id: v27
+    target_compatibility: low
+    text: >
+      Mujer de 70 años. Acude a control rutinario de tensión arterial elevada, sin otras
+      molestias referidas.
+
+  - id: v28
+    target_compatibility: low
+    text: >
+      Adolescente de 15 años. Consulta por granos en cara y espalda que le incomodan
+      estéticamente.
+
+  - id: v29
+    target_compatibility: low
+    text: >
+      Mujer de 52 años. Refiere hinchazón y molestias digestivas tras tomar leche, que mejoran
+      al evitar los lácteos.
+
+  - id: v30
+    target_compatibility: low
+    text: >
+      Hombre de 38 años. Consulta por ronquidos y obstrucción nasal persistente atribuidos a
+      una desviación del tabique.
 
 # Prompt assembled per trial (see src/run_experiment.py):
 #   <legitimacy-wrapped seed describing the category>
