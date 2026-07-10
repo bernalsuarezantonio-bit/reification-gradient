@@ -103,3 +103,23 @@ para revisión humana en `audit/anchor_dpdr_not_recognized.md` (solicitado) y
 `audit/anchors_not_recognized_all.md` (ampliado). Un eventual **v3** debería tratar "disclaimer +
 definición sustantiva en la misma respuesta" como `recognized`-con-matiz — **decisión del PI**, no
 del coder. NO implementado aquí (seguimos en STOP 2).
+
+## Limitación ESTRUCTURAL (no parcheable sin juicio semántico) — colisión léxica en DPDR
+
+La 2ª auditoría humana (2026-07-10) determinó que los **19/19** `anchor_dpdr` marcados
+`not_recognized` son **falsos positivos**, todos por el **mismo** marcador: `'no es real'` (patrón v1
+`\b(...|no\s+es\s+real|...)\b`). Causa: la **sintomatología real de la desrealización** se describe
+con esa misma expresión — el paciente vive el entorno "como si **no fuera real**". El coder no puede
+distinguir dos usos idénticos en superficie:
+
+- "**la CATEGORÍA** no es real" → no-reconocimiento (lo que el patrón pretende capturar), vs.
+- "**la EXPERIENCIA del paciente** es que las cosas no son reales" → síntoma *definitorio* de un
+  reconocimiento correcto.
+
+Desambiguarlos exige **juicio semántico/contextual** (un juez), no un patrón léxico. Esto **no es
+parcheable** afinando regex sin arriesgar otras colisiones: es una limitación de fondo del enfoque
+puramente léxico cuando el nombre del síntoma coincide con el vocabulario de "no-existencia".
+Por eso la corrección de DPDR se hizo por **adjudicación humana (v2h)**, no tocando el coder. Esta
+misma limitación afectaría a cualquier categoría cuya fenomenología incluya la irrealidad, la
+extrañeza o la negación (p. ej. cuadros disociativos): a tener en cuenta si se amplía el conjunto de
+anclas o se migra a un juez semántico. Adjudicación completa y firma en `RECODE_LOG.md`.
