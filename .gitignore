@@ -7,3 +7,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# local Claude Code harness settings (not study work)
+.claude/settings.local.json
