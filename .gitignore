@@ -20,3 +20,6 @@ phase2/*.log
 # OS / tooling cruft
 .DS_Store
 .Rhistory
+
+# R1 smoke outputs (non-confirmatory, throwaway)
+resultados_smoke/

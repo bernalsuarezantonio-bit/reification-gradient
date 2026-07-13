@@ -1,0 +1,21 @@
+# config_smoke.yaml — R1 SMOKE TEST. NON-CONFIRMATORY. Excluded from all analysis.
+# 2 vignettes x 4 conditions x 2 levels (L1,L5) x 2 families x 1 rep = 32 calls.
+name: smoke
+confirmatory: false            # smoke does NOT require the prereg tag
+output_dir: resultados_smoke
+
+models:
+  - ollama_remote/mistral-small3.1:24b
+  - ollama_remote/qwen2.5:32b
+
+conditions: [DN_plausible, real_anchor, incoherent, DN_flagged]
+levels: [L1_forum, L5_pseudodsm]
+vignettes: [v01, v05]          # one high, one low (probe both ends)
+reps: 1
+
+generation:                    # sealed params (PLAN.md, prereg-v1)
+  temperature: 0.7
+  num_ctx: 2048
+  num_predict: 512
+
+seed: 20260710

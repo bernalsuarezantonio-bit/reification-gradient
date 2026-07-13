@@ -76,7 +76,7 @@ def _http_post_json(url: str, payload: dict, headers: dict,
 
 def _query_ollama_remote(model_name: str, prompt: str, temperature: float,
                          timeout: int, max_retries: int, system: str | None,
-                         max_tokens: int | None) -> str:
+                         max_tokens: int | None, num_ctx: int | None) -> str:
     base = os.environ.get("OLLAMA_BASE_URL")
     if not base:
         raise ProviderError("OLLAMA_BASE_URL not set (put it in .env / the environment)")
@@ -87,6 +87,8 @@ def _query_ollama_remote(model_name: str, prompt: str, temperature: float,
     options = {"temperature": temperature}
     if max_tokens is not None:
         options["num_predict"] = max_tokens
+    if num_ctx is not None:
+        options["num_ctx"] = num_ctx
     payload = {
         "model": model_name,
         "messages": messages,
@@ -103,7 +105,7 @@ def _query_ollama_remote(model_name: str, prompt: str, temperature: float,
 
 def _query_anthropic(model_name: str, prompt: str, temperature: float,
                      timeout: int, max_retries: int, system: str | None,
-                     max_tokens: int | None) -> str:
+                     max_tokens: int | None, num_ctx: int | None = None) -> str:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         raise ProviderError("ANTHROPIC_API_KEY not set")
@@ -127,7 +129,7 @@ def _query_anthropic(model_name: str, prompt: str, temperature: float,
 
 def _query_openai(model_name: str, prompt: str, temperature: float,
                   timeout: int, max_retries: int, system: str | None,
-                  max_tokens: int | None) -> str:
+                  max_tokens: int | None, num_ctx: int | None = None) -> str:
     key = os.environ.get("OPENAI_API_KEY")
     if not key:
         raise ProviderError("OPENAI_API_KEY not set")
@@ -156,7 +158,8 @@ _PROVIDERS = {
 
 def query_model(model_id: str, prompt: str, temperature: float = 0.7, *,
                 timeout: int = DEFAULT_TIMEOUT, max_retries: int = DEFAULT_MAX_RETRIES,
-                system: str | None = None, max_tokens: int | None = None) -> str:
+                system: str | None = None, max_tokens: int | None = None,
+                num_ctx: int | None = None) -> str:
     """Dispatch `provider/model_name` to the right backend and return the response text."""
     load_env()
     if "/" not in model_id:
@@ -167,4 +170,4 @@ def query_model(model_id: str, prompt: str, temperature: float = 0.7, *,
     fn = _PROVIDERS.get(provider)
     if fn is None:
         raise ProviderError(f"unknown provider '{provider}'; known: {sorted(_PROVIDERS)}")
-    return fn(model_name, prompt, temperature, timeout, max_retries, system, max_tokens)
+    return fn(model_name, prompt, temperature, timeout, max_retries, system, max_tokens, num_ctx)
