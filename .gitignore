@@ -23,3 +23,6 @@ phase2/*.log
 
 # R1 smoke outputs (non-confirmatory, throwaway)
 resultados_smoke/
+
+# root-level operational run logs
+resultados_*_run*.log
