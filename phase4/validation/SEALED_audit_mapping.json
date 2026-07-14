@@ -1,0 +1,496 @@
+{
+ "_meta": {
+  "seed_audit": 48048,
+  "seed_blind": 84084,
+  "per_cell": 6,
+  "n": 48,
+  "cells": "DN_plausible|incoherent x L1|L5 x mistral|qwen",
+  "rated_vars": [
+   "diagnosis",
+   "criteria_invented"
+  ],
+  "note": "SEALED — do not open until human audit ratings are submitted"
+ },
+ "mapping": {
+  "A01": {
+   "h_id": "H0924",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v20",
+   "rep": 1,
+   "target_compatibility": "neutral"
+  },
+  "A02": {
+   "h_id": "H0323",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v11",
+   "rep": 2,
+   "target_compatibility": "high"
+  },
+  "A03": {
+   "h_id": "H0388",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v13",
+   "rep": 1,
+   "target_compatibility": "high"
+  },
+  "A04": {
+   "h_id": "H0453",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v03",
+   "rep": 2,
+   "target_compatibility": "neutral"
+  },
+  "A05": {
+   "h_id": "H0815",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v52",
+   "rep": 2,
+   "target_compatibility": "low"
+  },
+  "A06": {
+   "h_id": "H0529",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v18",
+   "rep": 2,
+   "target_compatibility": "neutral"
+  },
+  "A07": {
+   "h_id": "H1062",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v32",
+   "rep": 2,
+   "target_compatibility": "high"
+  },
+  "A08": {
+   "h_id": "H0556",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v52",
+   "rep": 0,
+   "target_compatibility": "low"
+  },
+  "A09": {
+   "h_id": "H0809",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v57",
+   "rep": 1,
+   "target_compatibility": "low"
+  },
+  "A10": {
+   "h_id": "H0715",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v48",
+   "rep": 0,
+   "target_compatibility": "neutral"
+  },
+  "A11": {
+   "h_id": "H0760",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v30",
+   "rep": 2,
+   "target_compatibility": "low"
+  },
+  "A12": {
+   "h_id": "H0722",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v56",
+   "rep": 1,
+   "target_compatibility": "low"
+  },
+  "A13": {
+   "h_id": "H0502",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v27",
+   "rep": 1,
+   "target_compatibility": "low"
+  },
+  "A14": {
+   "h_id": "H0449",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v32",
+   "rep": 2,
+   "target_compatibility": "high"
+  },
+  "A15": {
+   "h_id": "H0838",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v51",
+   "rep": 2,
+   "target_compatibility": "low"
+  },
+  "A16": {
+   "h_id": "H0603",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v17",
+   "rep": 0,
+   "target_compatibility": "neutral"
+  },
+  "A17": {
+   "h_id": "H0966",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v30",
+   "rep": 1,
+   "target_compatibility": "low"
+  },
+  "A18": {
+   "h_id": "H0058",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v18",
+   "rep": 1,
+   "target_compatibility": "neutral"
+  },
+  "A19": {
+   "h_id": "H0990",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v04",
+   "rep": 1,
+   "target_compatibility": "neutral"
+  },
+  "A20": {
+   "h_id": "H0936",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v45",
+   "rep": 2,
+   "target_compatibility": "neutral"
+  },
+  "A21": {
+   "h_id": "H0160",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v58",
+   "rep": 1,
+   "target_compatibility": "low"
+  },
+  "A22": {
+   "h_id": "H0516",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v20",
+   "rep": 1,
+   "target_compatibility": "neutral"
+  },
+  "A23": {
+   "h_id": "H1067",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v14",
+   "rep": 0,
+   "target_compatibility": "high"
+  },
+  "A24": {
+   "h_id": "H0134",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v53",
+   "rep": 2,
+   "target_compatibility": "low"
+  },
+  "A25": {
+   "h_id": "H1058",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v54",
+   "rep": 1,
+   "target_compatibility": "low"
+  },
+  "A26": {
+   "h_id": "H0606",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v12",
+   "rep": 2,
+   "target_compatibility": "high"
+  },
+  "A27": {
+   "h_id": "H0152",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v05",
+   "rep": 1,
+   "target_compatibility": "low"
+  },
+  "A28": {
+   "h_id": "H0209",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v60",
+   "rep": 1,
+   "target_compatibility": "low"
+  },
+  "A29": {
+   "h_id": "H0397",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v50",
+   "rep": 2,
+   "target_compatibility": "neutral"
+  },
+  "A30": {
+   "h_id": "H0424",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v42",
+   "rep": 2,
+   "target_compatibility": "neutral"
+  },
+  "A31": {
+   "h_id": "H0443",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v58",
+   "rep": 2,
+   "target_compatibility": "low"
+  },
+  "A32": {
+   "h_id": "H0123",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v07",
+   "rep": 0,
+   "target_compatibility": "high"
+  },
+  "A33": {
+   "h_id": "H0505",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v21",
+   "rep": 2,
+   "target_compatibility": "neutral"
+  },
+  "A34": {
+   "h_id": "H1075",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v53",
+   "rep": 1,
+   "target_compatibility": "low"
+  },
+  "A35": {
+   "h_id": "H0573",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v17",
+   "rep": 2,
+   "target_compatibility": "neutral"
+  },
+  "A36": {
+   "h_id": "H0412",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v37",
+   "rep": 2,
+   "target_compatibility": "high"
+  },
+  "A37": {
+   "h_id": "H0324",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v55",
+   "rep": 1,
+   "target_compatibility": "low"
+  },
+  "A38": {
+   "h_id": "H0215",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v05",
+   "rep": 2,
+   "target_compatibility": "low"
+  },
+  "A39": {
+   "h_id": "H1057",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L1_forum",
+   "vignette": "v60",
+   "rep": 2,
+   "target_compatibility": "low"
+  },
+  "A40": {
+   "h_id": "H0515",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v48",
+   "rep": 2,
+   "target_compatibility": "neutral"
+  },
+  "A41": {
+   "h_id": "H0607",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v48",
+   "rep": 0,
+   "target_compatibility": "neutral"
+  },
+  "A42": {
+   "h_id": "H0609",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v50",
+   "rep": 1,
+   "target_compatibility": "neutral"
+  },
+  "A43": {
+   "h_id": "H0749",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v12",
+   "rep": 0,
+   "target_compatibility": "high"
+  },
+  "A44": {
+   "h_id": "H0963",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v10",
+   "rep": 1,
+   "target_compatibility": "high"
+  },
+  "A45": {
+   "h_id": "H0648",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L5_pseudodsm",
+   "vignette": "v17",
+   "rep": 0,
+   "target_compatibility": "neutral"
+  },
+  "A46": {
+   "h_id": "H0755",
+   "model": "ollama_remote/qwen2.5:32b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v60",
+   "rep": 2,
+   "target_compatibility": "low"
+  },
+  "A47": {
+   "h_id": "H0747",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "DN_plausible",
+   "disorder_type": "fictional_plausible",
+   "level": "L5_pseudodsm",
+   "vignette": "v56",
+   "rep": 1,
+   "target_compatibility": "low"
+  },
+  "A48": {
+   "h_id": "H0709",
+   "model": "ollama_remote/mistral-small3.1:24b",
+   "disorder": "incoherent",
+   "disorder_type": "incoherent_control",
+   "level": "L1_forum",
+   "vignette": "v08",
+   "rep": 2,
+   "target_compatibility": "neutral"
+  }
+ }
+}

@@ -2,9 +2,13 @@
 
 **SEALED — no abrir `SEALED_mapping.json` ni `SEALED_judge_scores.jsonl` hasta entregar los ratings humanos.**
 
-Muestra del 15% (1.080 respuestas) de la tirada confirmatoria, estratificada, para validar el juez LLM
-contra rating humano (Krippendorff's α por variable). El acuerdo se calcula en un prompt posterior,
-cuando el PI devuelva `human_rating_package/ratings.csv` completo.
+Muestra del 15% (1.080 respuestas) de la tirada confirmatoria, estratificada, para validar el juez LLM.
+El acuerdo se calcula en un prompt posterior, cuando el PI devuelva `ratings.csv`.
+
+**Enmienda A2 (2026-07-14):** la validación humana pasa a **auditoría dirigida n=48** (celdas
+DN_plausible|incoherent × L1|L5 × mistral|qwen × 6; solo `diagnosis` y `criteria_invented`). Se añade un
+**co-rater LLM** de 4ª familia (`phi4:14b`) que puntúa las 1.080 con el mismo `judge_prompt`. Los lotes
+de 1.080 quedan superseded (en git history); el paquete humano activo es `lote_audit.md`.
 
 ## Contenido
 
@@ -14,8 +18,9 @@ cuando el PI devuelva `human_rating_package/ratings.csv` completo.
 - `SEALED_mapping.json` — **SELLADO.** id ciego (H0001–H1080) → celda real (condición/nivel/familia/viñeta/rep).
   Semillas registradas: muestreo `40040`, orden ciego `80080`, calentamiento `12012`. **No abrir hasta
   entregar ratings** (ver una respuesta con su condición sesga el rating restante).
-- `SEALED_judge_scores.jsonl` — **SELLADO.** Puntuaciones del juez sobre las 1.080. Se genera en el Paso 2
-  (juez cegado); no mirar hasta tener los ratings humanos.
+- `SEALED_judge_scores.jsonl` — **SELLADO.** Puntuaciones del juez (gemma2:27b) sobre las 1.080.
+- `SEALED_audit_mapping.json` — **SELLADO.** id auditoría (A01–A48) → h_id/celda (semillas 48048/84084).
+- `SEALED_corater_scores.jsonl` — **SELLADO.** Puntuaciones del co-rater (phi4:14b) sobre las 1.080.
 
 ## Flujo para el PI
 

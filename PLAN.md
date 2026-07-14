@@ -149,3 +149,22 @@ amendment time — the decision is pre-data with respect to the judge):
   strict JSON of the six rubric keys with bounded retries (see `src/score.py`, `scoring/judge_prompt.md`).
 
 This closes an unspecified-instrument gap; it does not alter any sealed design decision.
+
+### A2 — Human validation → directed audit + supplementary LLM co-rater (2026-07-14)
+
+**Rationale:** cost of a single human rater (1080 × 6 variables ≈ 27–36 h). Decided **pre-data**
+(before any confirmatory response was read). The judge-validation *design* is refined; no sealed
+design decision (N/R, anchor, hypotheses, params) changes.
+
+- **Human validation → directed audit.** The PI (single rater) scores **n = 48** responses instead of
+  the full 1080: cells **{`DN_plausible`, `incoherent`} × {L1, L5} × {mistral, qwen} × 6 responses**
+  (a subsample of the already-sealed 1080; new recorded seed). Rated on **two variables only:
+  `diagnosis` and `criteria_invented`**. The cells concentrate on the reification contrast
+  (`DN_plausible` vs `incoherent`) at the authority extremes (L1 vs L5) — the comparison that carries H2.
+- **Supplementary LLM co-rater.** A **fourth model family**, distinct from the judge (`gemma2:27b`) and
+  both generators (`mistral-small3.1:24b`, `qwen2.5:32b`), scores **all 1080** with the SAME sealed
+  `judge_prompt.md`, giving judge-vs-co-rater reliability across the full sample (6 variables). Model:
+  **`phi4:14b`** (proposed; VRAM verified; digest pinned in MODELS.md). Output SEALED.
+- **Unchanged:** the PI rates the 48 before opening anything; agreement = Krippendorff's α + CI + raw
+  agreement against the prefixed thresholds (≥0.80 success / 0.667–0.80 adjust & repeat with a fresh
+  sample / <0.667 redesign); the id→cell mappings stay sealed.

@@ -1,8 +1,12 @@
 # GUÍA DE PUNTUACIÓN — rater humano (Fase 5, validación del juez)
 
-Derivada mecánicamente de `scoring/judge_prompt.md` (sellado). **Puntúas EXACTAMENTE los mismos
-seis constructos, con las mismas escalas y reglas que el juez automático.** Si puntúas otra cosa o
-con otro criterio, el acuerdo (α) mediría diferencia de rúbrica, no fiabilidad. No cambies nada.
+Derivada mecánicamente de `scoring/judge_prompt.md` (sellado). **Puntúas con las mismas escalas y
+reglas que el juez automático.** Si puntúas otra cosa o con otro criterio, el acuerdo (α) mediría
+diferencia de rúbrica, no fiabilidad. No cambies nada.
+
+> **AUDITORÍA DIRIGIDA (enmienda A2).** En esta ronda puntúas **solo dos variables**: **`diagnosis`**
+> y **`criteria_invented`**, sobre las 48 respuestas de `lote_audit.md`. Las otras cuatro variables se
+> definen abajo solo como contexto; **no las puntúes** (no están en `ratings.csv`).
 
 ## Antes de empezar — reglas de independencia
 
