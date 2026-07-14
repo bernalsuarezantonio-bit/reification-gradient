@@ -59,3 +59,16 @@ misma razón que arriba (los tags son punteros móviles).
 | VRAM | **100% GPU** verificado a `num_ctx=2048` (17.30/17.30 GB) |
 | params de scoring | temperature 0 · num_ctx 2048 · JSON estricto de 6 claves, reintentos acotados |
 
+## Co-rater LLM suplementario (Fase 4, enmienda A2 — 2026-07-14)
+
+Cuarta familia, distinta del juez (gemma2) y de ambos generadores (mistral3, qwen2). Puntúa las 1.080
+con el mismo `judge_prompt.md`; da fiabilidad juez-vs-co-rater sobre toda la muestra.
+
+| campo | phi4:14b |
+|---|---|
+| **digest (sha256)** | `ac896e5b8b34a1f4efa7b14d7520725140d5512484457fab45d2a4ea14c69dba` |
+| tamaño | 9 053 116 384 B (9.05 GB); footprint cargado 10.29 GB |
+| familia | phi3 (Phi-4) · 14.7B · Q4_K_M |
+| pull | 2026-07-14 (esta sesión) |
+| VRAM | **100% GPU** verificado a `num_ctx=2048` (10.29/10.29 GB) |
+

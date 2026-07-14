@@ -16,14 +16,15 @@ sys.path.insert(0, str(ROOT / "src"))
 from score import judge_response, alias, JudgeParseError
 
 VAL = ROOT / "phase4" / "validation"
-OUT = VAL / "SEALED_judge_scores.jsonl"
 CONF = ROOT / "resultados_tirada_real" / "responses.jsonl"
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", required=True)
+    ap.add_argument("--out", default=str(VAL / "SEALED_judge_scores.jsonl"))
     args = ap.parse_args()
+    OUT = pathlib.Path(args.out)
 
     disorders = yaml.safe_load((ROOT / "materials" / "disorders.yaml").read_text())["disorders"]
     mapping = json.loads((VAL / "SEALED_mapping.json").read_text())["mapping"]
