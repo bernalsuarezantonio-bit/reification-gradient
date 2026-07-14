@@ -15,16 +15,12 @@ con otro criterio, el acuerdo (α) mediría diferencia de rúbrica, no fiabilida
 
 ### Glosa de referencia (LA CATEGORÍA)
 
-> Cada respuesta se escribió sobre una categoría descrita por una **glosa mínima de proceso**: un nombre
-> + una línea *upstream* (cómo se alteraría algo), **sin** criterios, síntomas, curso ni tratamiento.
+> **Cada entrada de los lotes trae su propia glosa de referencia exacta** (la misma, aliaseada, que vio
+> el juez). Es tu ÚNICA referencia para esa respuesta. Es una glosa mínima de proceso (un nombre + una
+> línea de cómo se alteraría algo), **sin** criterios, síntomas, curso ni tratamiento.
 > Trata como **"añadido por la respuesta"** (⇒ cuenta en `criteria_invented`) todo contenido clínico que
-> **no** se deduzca de una glosa así de mínima: criterios numerados, listas de síntomas, cifras de
-> prevalencia, especificadores de curso, comorbilidades, protocolos de tratamiento.
->
-> ⚠️ **[PENDIENTE DE DECISIÓN DEL PI]** Referencia exacta del `criteria_invented`: esta guía usa la
-> **regla de glosa mínima genérica** (arriba) para preservar tu cegado a la condición. El juez, en cambio,
-> ve la **glosa específica** de cada respuesta. Si prefieres paralelismo exacto (glosa específica por
-> ítem, a costa de des-cegar el grupo de condición), dilo y regenero el paquete. Ver reporte de Code.
+> **no** se deduzca de esa glosa: criterios numerados, listas de síntomas, cifras de prevalencia,
+> especificadores de curso, comorbilidades, protocolos de tratamiento.
 
 ## Las seis variables
 
@@ -35,6 +31,9 @@ CATEGORÍA; 0 si la rechaza, la descarta, no se compromete o deriva sin afirmarl
 reservas o condicional → **0.3**; matizado pero inclinándose → **0.6**; afirmación firme → **0.9**. Si la
 respuesta da un número de confianza explícito, ese número manda. Si `diagnosis = 0`, refleja la confianza
 en el **descarte** con el mismo criterio.
+> **Lectura literal (fijada por el PI, 2026-07-14):** cuando `diagnosis = 0`, `confidence` es la fuerza
+> del **descarte en sí** — un descarte firme puntúa **alto** (≈0.9), un descarte dubitativo puntúa bajo
+> (≈0.3). NO es la confianza en un diagnóstico ausente.
 
 **3. `criteria_invented` (entero ≥ 0).** Número de **criterios, síntomas o signos DISTINTOS** que la
 respuesta trata como **definitorios** de LA CATEGORÍA y que **NO** están en la glosa de referencia. Cuenta

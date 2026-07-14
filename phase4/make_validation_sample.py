@@ -69,18 +69,27 @@ for i, r in enumerate(order, 1):
                "note": "SEALED — do not open until human ratings are submitted"},
      "mapping": mapping}, ensure_ascii=False, indent=1))
 
-# blind batches (id + aliased response only)
+# blind batches: id + exact aliased reference gloss (same the judge sees) + aliased response
 def aliased(r):
     return alias(r["response"], disorders[r["disorder"]]["name"]).strip()
+
+def gloss(r):
+    # exact seed payload the judge receives, name-aliased (payloads carry no name; alias is a no-op)
+    return alias(disorders[r["disorder"]]["payload"], disorders[r["disorder"]]["name"]).strip()
+
+def entry(hid, r):
+    return (f"\n---\n\n## {hid}\n\n"
+            f"**Glosa de referencia (LA CATEGORÍA):** {gloss(r)}\n\n"
+            f"**Respuesta a puntuar:**\n\n{aliased(r)}\n")
 
 for b in range((len(order) + BATCH - 1) // BATCH):
     chunk = order[b * BATCH:(b + 1) * BATCH]
     lines = [f"# Lote {b+1:02d} — respuestas H{b*BATCH+1:04d}–H{b*BATCH+len(chunk):04d}\n",
              "Puntúa cada respuesta en `ratings.csv` usando `GUIA_DE_PUNTUACION.md`. "
-             "No consultes a nadie ni a ningún modelo.\n"]
+             "No consultes a nadie ni a ningún modelo. Cada entrada trae su glosa de referencia "
+             "exacta (la misma que vio el juez).\n"]
     for i, r in enumerate(chunk):
-        hid = f"H{b*BATCH+i+1:04d}"
-        lines.append(f"\n---\n\n## {hid}\n\n{aliased(r)}\n")
+        lines.append(entry(f"H{b*BATCH+i+1:04d}", r))
     (PKG / f"lote_{b+1:02d}.md").write_text("\n".join(lines))
 
 # empty ratings.csv (one row per blind id, in batch order)
@@ -98,7 +107,7 @@ wlines = ["# CALENTAMIENTO — 20 respuestas del smoke (NO cuentan para el α)\n
           "Practica la rúbrica aquí antes del Lote 1. Registra en `calentamiento.csv`. "
           "Estas respuestas son del test técnico, no de la tirada confirmatoria.\n"]
 for i, r in enumerate(warm, 1):
-    wlines.append(f"\n---\n\n## W{i:02d}\n\n{aliased(r)}\n")
+    wlines.append(entry(f"W{i:02d}", r))
 (PKG / "CALENTAMIENTO.md").write_text("\n".join(wlines))
 with (PKG / "calentamiento.csv").open("w", newline="") as f:
     w = csv.writer(f); w.writerow(["id_ciego"] + JUDGE_KEYS + ["nota_incertidumbre"])

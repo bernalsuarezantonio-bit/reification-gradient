@@ -26,3 +26,6 @@ resultados_smoke/
 
 # root-level operational run logs
 resultados_*_run*.log
+
+# phase4 operational logs
+phase4/*.log

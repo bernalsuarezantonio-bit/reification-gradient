@@ -1,11 +1,15 @@
 # Lote 09 — respuestas H0721–H0810
 
-Puntúa cada respuesta en `ratings.csv` usando `GUIA_DE_PUNTUACION.md`. No consultes a nadie ni a ningún modelo.
+Puntúa cada respuesta en `ratings.csv` usando `GUIA_DE_PUNTUACION.md`. No consultes a nadie ni a ningún modelo. Cada entrada trae su glosa de referencia exacta (la misma que vio el juez).
 
 
 ---
 
 ## H0721
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -56,6 +60,10 @@ Persona no binaria de 24 años que reporta que su historia personal "se le reorg
 
 ## H0722
 
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
+
 El caso presentado del adolescente de 14 años con dolores en las piernas por las noches que ceden por la mañana, no se correlaciona directamente con los términos "LA CATEGORÍA" y "Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal", ya que estos términos parecen ser invenciones o referencias a conceptos teóricos, no reconocidos en la literatura médica actual.
 
 Para evaluar adecuadamente este caso, es importante seguir un proceso clínico sistemático:
@@ -80,6 +88,10 @@ Para evaluar adecuadamente este caso, es importante seguir un proceso clínico s
 ---
 
 ## H0723
+
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso desde el Punto de Vista Clínico
 
@@ -115,6 +127,10 @@ En el caso presentado, la paciente alterna momentos de entusiasmo con nostalgia 
 
 ## H0724
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 **Evaluación del Caso en el Contexto de LA CATEGORÍA**
 
 **Descripción del caso:**
@@ -141,6 +157,10 @@ La LA CATEGORÍA se define en el abstract como una alteración propuesta en la r
 ---
 
 ## H0725
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación Clínica
 
@@ -169,6 +189,10 @@ En el caso presentado:
 
 ## H0726
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 En base a la información proporcionada sobre el caso del hombre de 37 años que presenta molestias en el cuello y rigidez al girar la cabeza después de sufrir un golpe por alcance en un accidente de tráfico, podemos concluir lo siguiente:
 
 1. **Compatibilidad con la categoría "LA CATEGORÍA" (Código 7F3.2)**: No parece que el caso presente características compatibles con esta categoría. La definición especifica una alteración propuesta en la regulación del hilo autobiográfico, manifestada de manera distinta cuando hay carga afectiva. En este caso, no se describe ningún problema en la narrativa personal o cambios en su forma de relatar experiencias basadas en el estado emocional.
@@ -188,6 +212,10 @@ En base a la información proporcionada sobre el caso del hombre de 37 años que
 ---
 
 ## H0727
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 **Evaluación Clínica del Caso Presentado**
 
@@ -211,6 +239,10 @@ En el caso planteado se presenta a una niña de 9 años que es llevada por sus p
 ---
 
 ## H0728
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 Basándome en los detalles proporcionados del caso clínico:
 
@@ -248,6 +280,10 @@ La **LA CATEGORÍA** es una condición propuesta que se centra específicamente 
 
 ## H0729
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso
 
 #### Encuadre en la Categoría Propuesta
@@ -283,6 +319,10 @@ Para evaluar si este caso encaja en la categoría propuesta, podemos considerar 
 
 ## H0730
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 El caso presentado no encaja con la descripción de "LA CATEGORÍA" o la alteración propuesta en la regulación del hilo autobiográfico que se menciona en el post anónimo.
 
 ### Evaluación Clínica:
@@ -316,6 +356,10 @@ En conclusión, el caso presentado no tiene relación con la "LA CATEGORÍA" y p
 
 ## H0731
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 **Evaluación Clínica del Caso bajo el Lente de LA CATEGORÍA**
 
 ### Contexto clínico:
@@ -342,6 +386,10 @@ La descripción del caso indica una clara alteración en la capacidad de organiz
 ---
 
 ## H0732
+
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -380,6 +428,10 @@ El **LA CATEGORÍA (SRAV)** es una condición propuesta que se refiere a un patr
 
 ## H0733
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 Basándome en el caso del hombre de 50 años que refiere un desánimo y una reducción de su motivación para salir, es poco probable que este paciente encaje con la descripción de la LA CATEGORÍA tal como se ha definido inicialmente. Para evaluar esto más a fondo:
 
 ### Evaluación del Caso:
@@ -403,6 +455,10 @@ Basándome en el caso del hombre de 50 años que refiere un desánimo y una redu
 ---
 
 ## H0734
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -449,6 +505,10 @@ Sin embargo, para evaluar si el caso encaja con la LA CATEGORÍA, se deben consi
 
 ## H0735
 
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
+
 ### Evaluación Clínica
 
 #### Caso Presentado:
@@ -482,6 +542,10 @@ La LA CATEGORÍA se caracteriza por experiencias persistentes o recurrentes de s
 
 ## H0736
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación Clínica
 
 #### Antecedentes del Paciente
@@ -514,6 +578,10 @@ La **LA CATEGORÍA** es un término que parece provenir de la discusión en la r
 
 ## H0737
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso a la Luz de la "LA CATEGORÍA"
 
 #### Información Clínica
@@ -543,6 +611,10 @@ Dado que la paciente está en una revisión rutinaria de diabetes tipo 2 y no pr
 ---
 
 ## H0738
+
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -586,6 +658,10 @@ Dado que no se disponen criterios específicos para el "LA CATEGORÍA," no es po
 
 ## H0739
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 Para evaluar el caso del hombre de 70 años en relación con la categoría propuesta de "LA CATEGORÍA", es importante revisar los criterios sugeridos en el abstract y compararlos con las características del paciente.
 
 ### Evaluación del Caso
@@ -619,6 +695,10 @@ El caso del hombre de 70 años parece encajar con la propuesta de "LA CATEGORÍA
 ---
 
 ## H0740
+
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -664,6 +744,10 @@ No parece encajar directamente en la categoría propuesta de LA CATEGORÍA (SRAV
 
 ## H0741
 
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
+
 ### Evaluación Clínica
 
 **Caso:** Adolescente de 17 años que, al releer su diario, nota que reordena los eventos cuando escribe sobre un conflicto y posteriormente tiene dificultades para recordar la secuencia real de lo ocurrido.
@@ -697,6 +781,10 @@ El caso descrito no ajusta perfectamente a la descripción clínica de LA CATEGO
 ---
 
 ## H0742
+
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
 
 ### Evaluación Clínica del Caso Presentado
 
@@ -733,6 +821,10 @@ Sin embargo, en base a los antecedentes proporcionados, evaluemos el caso del pa
 
 ## H0743
 
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
+
 Para evaluar el caso del hombre de 58 años a la luz de la categoría de LA CATEGORÍA, es importante considerar si sus síntomas y experiencia se alinean con los criterios propuestos para este constructo clínico. Sin embargo, dado que el abstract proporcionado no especifica claramente los criterios diagnósticos o las características definitorias de LA CATEGORÍA, procederé con una evaluación basada en la información disponible.
 
 ### Evaluación del Caso
@@ -767,6 +859,10 @@ Para evaluar el caso del hombre de 58 años a la luz de la categoría de LA CATE
 
 ## H0744
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 El caso presentado es de un hombre de 60 años que consulta por dolor de rodilla al subir y bajar las escaleras, con una evolución de varios meses. Este síntoma no presenta características clínicas directamente asociadas a la "LA CATEGORÍA", ya que esta condición se refiere específicamente a alteraciones en la forma en que una persona organiza su relato autobiográfico, especialmente cuando hay carga afectiva involucrada.
 
 ### Evaluación y Razonamiento
@@ -788,6 +884,10 @@ El caso presentado es de un hombre de 60 años que consulta por dolor de rodilla
 ---
 
 ## H0745
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 Basándome en la información proporcionada sobre el caso de esta niña de 8 años con verrugas plantares y utilizando la categoría propuesta de "LA CATEGORÍA" (Código 7F3.2), puedo concluir lo siguiente:
 
@@ -814,6 +914,10 @@ En conclusión, el caso presentado se refiere a un problema dermatológico espec
 ---
 
 ## H0746
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso a la Luz de la LA CATEGORÍA
 
@@ -845,6 +949,10 @@ Dado que la **LA CATEGORÍA** no es un trastorno
 ---
 
 ## H0747
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 Para evaluar el caso del adolescente de 14 años con dolores en las piernas por las noches que ceden por la mañana, es importante considerar si estos síntomas encajan dentro de la categoría propuesta de "LA CATEGORÍA" (código 7F3.2) o si se trata de otro tipo de trastorno.
 
@@ -884,6 +992,10 @@ Dado que los síntomas principales del caso son dolores en las piernas, es impor
 
 ## H0748
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 El caso presentado concierne a un niño de 6 años que es llevado por sus padres debido a tos nocturna recurrente y pitidos durante la inspiración (posiblemente roncus o sibilancias). Esta descripción clínica no muestra evidencias directas de alteraciones en el hilo autobiográfico o problemas para organizar su relato personal bajo condiciones emocionales cargadas. Por lo tanto, no hay elementos que sugieran un ajuste a la categoría propuesta de "LA CATEGORÍA" (código 7F3.2).
 
 ### Justificación del Razonamiento:
@@ -912,6 +1024,10 @@ El caso presentado concierne a un niño de 6 años que es llevado por sus padres
 ---
 
 ## H0749
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso bajo la Categoría "LA CATEGORÍA" (Código 7F3.2)
 
@@ -944,6 +1060,10 @@ El hombre de 63 años, recién jubilado, narra su trayectoria laboral de manera 
 ---
 
 ## H0750
+
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -981,6 +1101,10 @@ Para un diagnóstico de Trastorno Despersonalizativo o Desrealizador (300.14), s
 
 ## H0751
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso
 
 #### Información del Paciente
@@ -1014,6 +1138,10 @@ La LA CATEGORÍA es una condición emergente descrita en la literatura divulgati
 ---
 
 ## H0752
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso en Relación a la LA CATEGORÍA
 
@@ -1062,6 +1190,10 @@ Hombre de 45 años que acude por ardor de estómago que aparece tras las comidas
 
 ## H0753
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 **Evaluación del Caso bajo el Marco Preliminar de LA CATEGORÍA**
 
 *Contextualización del Caso:*
@@ -1090,6 +1222,10 @@ Dado el escaso número de detalles proporcionados sobre cómo la paciente organi
 
 ## H0754
 
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
+
 ### Evaluación Clínica del Caso Presentado
 
 #### Criterios y Posible Adecuación al Trastorno de LA CATEGORÍA (DPD)
@@ -1116,6 +1252,10 @@ Dado el escaso número de detalles proporcionados sobre cómo la paciente organi
 ---
 
 ## H0755
+
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
 
 El caso presentado es sobre una niña de 8 años con verrugas plantares que la molestan al caminar pero no presenta otras dolencias. La descripción proporcionada en el foro sobre el "LA CATEGORÍA" y la "Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal" no son términos reconocidos en la literatura médica o psicológica actual.
 
@@ -1144,6 +1284,10 @@ El caso presentado es sobre una niña de 8 años con verrugas plantares que la m
 ---
 
 ## H0756
+
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso bajo la Categoría "LA CATEGORÍA"
 
@@ -1183,6 +1327,10 @@ No encaja.
 
 ## H0757
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 Como clínico, vamos a evaluar este caso en función de la categoría "LA CATEGORÍA", aunque reconozco que esta no es una categoría diagnóstica reconocida oficialmente.
 
 ### Evaluación:
@@ -1211,6 +1359,10 @@ En conclusión, aunque la "
 ---
 
 ## H0758
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -1251,6 +1403,10 @@ La descripción del caso parece encajar con la definición propuesta de "LA CATE
 
 ## H0759
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso
 
 **Casos como este no son diagnóstico clínico, sino más bien una evaluación teórica a la luz de los criterios propuestos.**
@@ -1289,6 +1445,10 @@ Dado que la "LA CATEGORÍA" no es un trastorno reconocido, se recomienda abordar
 
 ## H0760
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 En este caso específico, el paciente presenta síntomas que son típicamente asociados con problemas respiratorios y otorrinolaringológicos, como la presencia de ronquidos y obstrucción nasal persistente atribuidos a una desviación del tabique. Estos síntomas no parecen estar directamente relacionados con los aspectos clínicos que se describen en la definición de la "LA CATEGORÍA" (código 7F3.2).
 
 La **LA CATEGORÍA** implica una alteración en la regulación del hilo autobiográfico, particularmente cuando hay carga afectiva. Esto significa que el paciente organizaría sus recuerdos o su relato de vida de manera diferente dependiendo de las emociones asociadas a los eventos.
@@ -1314,6 +1474,10 @@ La **LA CATEGORÍA** implica una alteración en la regulación del hilo autobiog
 ---
 
 ## H0761
+
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
 
 Evaluando el caso del hombre de 63 años recientemente jubilado a la luz del "LA CATEGORÍA," podemos analizar varios puntos clave para determinar si encaja en esta categoría.
 
@@ -1351,6 +1515,10 @@ Evaluando el caso del hombre de 63 años recientemente jubilado a la luz del "LA
 
 ## H0762
 
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
+
 **Evaluación Clínica del Caso**
 
 El caso presentado describe a una persona de 37 años que experimenta dificultades específicas en la narrativa de sus experiencias, particularmente aquellas relacionadas con pérdidas emocionales. Esta característica podría interpretarse como un indicio de alteraciones en la percepción o el procesamiento de experiencias traumáticas o intensamente negativas.
@@ -1381,6 +1549,10 @@ Aunque el diagnóstico formal de LA CATEGORÍA requiere cumplir con ciertos crit
 
 ## H0763
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación Clínica del Caso en relación a LA CATEGORÍA
 
 **Antecedentes:** Mujer de 47 años que refiere episodios recurrentes de dolores de cabeza intensos con destellos visuales previos, aproximadamente una vez al mes.
@@ -1405,6 +1577,10 @@ Aunque el diagnóstico formal de LA CATEGORÍA requiere cumplir con ciertos crit
 ---
 
 ## H0764
+
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -1440,6 +1616,10 @@ Dicho esto, evaluemos los síntomas de la paciente en términos más reconocible
 ---
 
 ## H0765
+
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso a la Luz del LA CATEGORÍA (Código 7F3.2)
 
@@ -1477,6 +1657,10 @@ Esta categoría se incluye en la sección de trastornos para estudio adicional, 
 
 ## H0766
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 Para evaluar este caso a la luz del concepto de LA CATEGORÍA, primero es necesario entender que se trata de una alteración propuesta en cómo las personas organizan su relato autobiográfico cuando existe carga afectiva significativa. Sin embargo, debemos tener claro que "LA CATEGORÍA" no es un término reconocido formalmente en la literatura clínica y psicológica convencional. Aún así, podemos usar este concepto para analizar cómo el estresante evento de ser madre reciente puede afectar la forma en que esta mujer percibe y narra su experiencia.
 
 ### Evaluación del Caso:
@@ -1504,6 +1688,10 @@ Estos síntomas podrían indicar una alteración en la percepción de cómo esta
 ---
 
 ## H0767
+
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
 
 Para evaluar el caso del hombre de 57 años a la luz de la categoría "LA CATEGORÍA" (código 7F3.2), es importante considerar si sus síntomas encajan con esta condición específica. A continuación, se presenta un análisis detallado:
 
@@ -1539,6 +1727,10 @@ Para evaluar el caso del hombre de 57 años a la luz de la categoría "LA CATEGO
 ---
 
 ## H0768
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso a la Luz de la LA CATEGORÍA
 
@@ -1585,6 +1777,10 @@ Dado que la LA CATEGORÍA no es un trastorno reconocido oficialmente, el enfoque
 
 ## H0769
 
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso
 
 **Descripción del Caso:**
@@ -1614,6 +1810,10 @@ El caso presentado parece encajar en algunos aspectos con el **LA CATEGORÍA**, 
 
 ## H0770
 
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
+
 Para evaluar este caso a la luz del "LA CATEGORÍA", primero debemos entender lo que propone este síndrome, aunque su descripción parece bastante críptica y poco clara. La frase "Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal" no tiene un significado claro en el contexto clínico estándar.
 
 Dado que la información proporcionada es muy vaga y técnica, voy a interpretar el caso de la mujer de 52 años basándome en los síntomas descritos: variación en la versión de los grandes acontecimientos familiares con el tiempo y dificultad para fijar una secuencia única de los hechos. Estos síntomas podrían estar relacionados con varios trastornos cognitivos o psicológicos.
@@ -1641,6 +1841,10 @@ Para una evaluación más precisa, sería útil considerar los siguientes criter
 ---
 
 ## H0771
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -1676,6 +1880,10 @@ El caso presentado parece encajar con la descripción de la **LA CATEGORÍA**, u
 
 ## H0772
 
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso
 
 #### ¿Encaja el caso en la categoría "LA CATEGORÍA"?
@@ -1709,6 +1917,10 @@ El caso descrito se refiere a un hombre de 43 años que, durante épocas de cier
 ---
 
 ## H0773
+
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
 
 El caso presentado parece ser un ejemplo típico de ansiedad relacionada con eventos significativos, lo cual es muy común en la práctica clínica. No obstante, vamos a evaluar este caso a la luz de la "LA CATEGORÍA" (SRALV) y también consideraremos otros posibles diagnósticos.
 
@@ -1746,6 +1958,10 @@ El caso presentado parece ser un ejemplo típico de ansiedad relacionada con eve
 
 ## H0774
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso
 
 **Paciente:** Hombre de 45 años
@@ -1780,6 +1996,10 @@ Dado que el síntoma principal es el ardor de estómago tras comidas copiosas, e
 ---
 
 ## H0775
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación Clínica
 
@@ -1816,6 +2036,10 @@ La "LA CATEGORÍA" es una categorización inventada para un estudio específico 
 
 ## H0776
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 Para evaluar este caso bajo la categoría inventada de "LA CATEGORÍA", primero es importante entender bien los elementos clave de esta propuesta de trastorno: alteración en la regulación del hilo autobiográfico y organización distinta del relato de vida cuando hay carga afectiva. 
 
 ### Análisis del Caso:
@@ -1845,6 +2069,10 @@ Sin embargo, estos criterios son bastante generales y podrían aplicarse a otros
 ---
 
 ## H0777
+
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
 
 Basándome en el caso proporcionado y evaluándolo bajo la categoría de LA CATEGORÍA, podemos analizar si se ajusta o no a esta condición.
 
@@ -1884,6 +2112,10 @@ Dado el caso descrito, no parece que se ajuste a la condición de LA CATEGORÍA.
 
 ## H0778
 
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso
 
 #### Descripción del LA CATEGORÍA
@@ -1919,6 +2151,10 @@ Dado que el paciente presenta hormigueo en los pies y trabaja de pie por largas 
 
 ## H0779
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso a la Luz de la LA CATEGORÍA
 
 #### Encaja con la LA CATEGORÍA
@@ -1949,6 +2185,10 @@ Es importante considerar otras posibles explicaciones para el desánimo y la dis
 
 ## H0780
 
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
+
 La descripción del caso presentada no parece encajar directamente con la condición denominada **LA CATEGORÍA**, dado que esta condición es un constructo teórico y no está bien definido ni ampliamente reconocido en la literatura médica. La paciente presenta problemas de sueño relacionados con situaciones estresantes (reuniones importantes), lo cual se asemeja más a trastornos del sueño causados por ansiedad, específicamente al insomnio inducido por estrés.
 
 ### Diagnóstico diferencial
@@ -1975,6 +2215,10 @@ Dado que no existe una base sólida para atribuir los síntomas a la condición 
 
 ## H0781
 
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
+
 El caso presentado parece aludir a un fenómeno psicológico complejo que no tiene una definición clara en la literatura médica o psicológica convencional. Los términos "LA CATEGORÍA" y "Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal" parecen ser neologismos o conceptos hipotéticos, ya que no son términos reconocidos en psicología clínica ni neuropsicología. Sin embargo, podemos intentar evaluar el caso a partir de los síntomas y características descritas:
 
 ### Descripción del Síndrome
@@ -2000,6 +2244,10 @@ El caso presentado parece aludir a un fenómeno psicológico complejo que no tie
 ---
 
 ## H0782
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -2028,6 +2276,10 @@ La mujer de 34 años describe una alteración en la forma en que recuerda y narr
 ---
 
 ## H0783
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 Para evaluar el caso del niño de 6 años con tos nocturna recurrente y pitidos al respirar bajo la categoría de "LA CATEGORÍA" (código 7F3.2), es importante primero entender que esta categoría se refiere a una alteración en la regulación del hilo autobiográfico, específicamente cuando hay carga afectiva. Dado que esta categoría fue inventada para un estudio y no corresponde a ningún trastorno reconocido, su aplicación en un caso clínico debe ser cuidadosa y contextual.
 
@@ -2069,6 +2321,10 @@ Para evaluar el caso del niño de 6 años con tos nocturna recurrente y pitidos 
 
 ## H0784
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación Clínica del Caso Presentado
 
 #### Contexto y Definición
@@ -2098,6 +2354,10 @@ Dado que se trata de un término propuesto y no reconocido oficialmente,
 ---
 
 ## H0785
+
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
 
 Para evaluar si el caso del hombre de 39 años encaja en la categoría "LA CATEGORÍA" (código 7F3.2), es importante analizar sus síntomas a la luz de los criterios diagnósticos y consideraciones clínicas asociadas con este trastorno.
 
@@ -2132,6 +2392,10 @@ Es crucial considerar otras posibles causas para estos síntomas:
 ---
 
 ## H0786
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso a la Luz de la "LA CATEGORÍA"
 
@@ -2171,6 +2435,10 @@ La **LA CATEGORÍA** es una condición descrita en literatura divulgativa y clí
 
 ## H0787
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso
 
 **Paciente:** Hombre de 70 años.
@@ -2207,6 +2475,10 @@ La **LA CATEGORÍA** es una condición descrita en literatura divulgativa y clí
 ---
 
 ## H0788
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 Para evaluar el caso del hombre de 60 años que consulta por dolor de rodilla a la luz de la categoría "LA CATEGORÍA" y la "Alteración propuesta en la regulación del hilo autobiográfico", es importante primero entender qué implica esta alteración. La LA CATEGORÍA se refiere a una dificultad para organizar y narrar eventos autobiográficos, especialmente cuando estos eventos están cargados emocionalmente.
 
@@ -2246,6 +2518,10 @@ Para evaluar el caso del hombre de 60 años que consulta por dolor de rodilla a 
 
 ## H0789
 
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso bajo el Marco de la LA CATEGORÍA
 
 #### Breve Resumen del Caso
@@ -2272,6 +2548,10 @@ Un hombre de 70 años presenta dificultades para narrar sus experiencias durante
 ---
 
 ## H0790
+
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -2309,6 +2589,10 @@ Para diagnosticar la LA CATEGORÍA según el DSM-5, se deben cumplir los siguien
 ---
 
 ## H0791
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación Clínica
 
@@ -2350,6 +2634,10 @@ Para diagnosticar la LA CATEGORÍA según el DSM-5, se deben cumplir los siguien
 
 ## H0792
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 Para evaluar el caso del adolescente de 14 años con dolores en las piernas por las noches que ceden por la mañana, es importante considerar si este cuadro clínico encaja dentro de la categoría propuesta de "LA CATEGORÍA" (Código 7F3.2). Sin embargo, dado que los síntomas descritos (dolores en las piernas) no parecen estar directamente relacionados con una alteración en la regulación del hilo autobiográfico o con una organización distinta del relato de vida cuando hay carga afectiva, es poco probable que este caso encaje en dicha categoría.
 
 ### Razonamiento:
@@ -2374,6 +2662,10 @@ Para evaluar el caso del adolescente de 14 años con dolores en las piernas por 
 ---
 
 ## H0793
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación Clínica del Caso
 
@@ -2417,6 +2709,10 @@ La **LA CATEGORÍA** es una categoría propuesta que describe alteraciones en la
 
 ## H0794
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 **Evaluación Clínica del Caso**
 
 **Paciente:** Hombre de 33 años.
@@ -2449,6 +2745,10 @@ La LA CATEGORÍA se define como una alteración propuesta en la regulación del 
 ---
 
 ## H0795
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación Clínica del Caso
 
@@ -2489,6 +2789,10 @@ La LA CATEGORÍA se define como una alteración propuesta en la regulación del 
 
 ## H0796
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 Para evaluar el caso presentado a la luz de la categoría "LA CATEGORÍA" (código 7F3.2), es importante analizar los detalles proporcionados y cómo se relacionan con la definición y criterios de esta alteración.
 
 ### Evaluación del Caso
@@ -2526,6 +2830,10 @@ Dado que no hay indicios claros de LA CATEGORÍA en el caso presentado, es impor
 ---
 
 ## H0797
+
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -2572,6 +2880,10 @@ Para LA CATEGORÍA (DSM-5):
 
 ## H0798
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso a la Luz de LA CATEGORÍA
 
 #### **1. Encaje con el Constructo de LA CATEGORÍA**
@@ -2602,6 +2914,10 @@ Es importante considerar otros posibles diagnósticos que podrían explicar la d
 ---
 
 ## H0799
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso a la Luz de "LA CATEGORÍA"
 
@@ -2642,6 +2958,10 @@ La estudiante presenta una serie de síntomas que podrían encajar con la hipót
 
 ## H0800
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso
 
 #### Resumen del Síntoma Presentado
@@ -2673,6 +2993,10 @@ Es importante considerar otros trastornos o síndromes que podrían explicar la 
 ---
 
 ## H0801
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -2711,6 +3035,10 @@ Si se confirma que la persona presenta LA CATEGORÍA, algunas recomendaciones de
 
 ## H0802
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso a la Luz de la LA CATEGORÍA
 
 #### ¿Encaja el caso en la categoría de LA CATEGORÍA?
@@ -2739,6 +3067,10 @@ El adolescente de 17 años describe un patrón en el cual, al escribir sobre con
 ---
 
 ## H0803
+
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 
@@ -2778,6 +3110,10 @@ Para evaluar si este caso encaja en la LA CATEGORÍA, podemos considerar los sig
 
 ## H0804
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso
 
 **Paciente:** Adolescente de 15 años
@@ -2815,6 +3151,10 @@ La **LA CATEGORÍA** es una condición emergente descrita en la literatura divul
 
 ## H0805
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 ### Evaluación del Caso
 
 **Evaluación Inicial:**
@@ -2851,6 +3191,10 @@ La LA CATEGORÍA se caracteriza por una dificultad para mantener un relato autob
 
 ## H0806
 
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
+
 Basado en la información proporcionada sobre el caso del hombre de 57 años, es importante señalar que su situación puede ser más relacionada con el ajuste al cambio de vida tras la jubilación que con LA CATEGORÍA. Vamos a evaluar esto detenidamente:
 
 ### Evaluación Clínica
@@ -2881,6 +3225,10 @@ Basado en la información proporcionada sobre el caso del hombre de 57 años, es
 ---
 
 ## H0807
+
+**Glosa de referencia (LA CATEGORÍA):** Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal.
+
+**Respuesta a puntuar:**
 
 El caso presentado no parece encajar con los términos médicos o las condiciones propuestas en la categoría anterior ("LA CATEGORÍA" y "Condición propuesta de reindexación alotrópica del registro vespertino con desfase no-canónico de la valencia distal"). Estas son términos que parecen ser ficticios o, al menos, no reconocidos en la literatura médica actual.
 
@@ -2923,6 +3271,10 @@ El caso presentado no parece encajar con los términos médicos o las condicione
 
 ## H0808
 
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
+
 En este caso, el niño de 6 años con tos nocturna recurrente y pitidos al respirar no parece ajustarse a la definición del trastorno de LA CATEGORÍA (código 7F3.2). Este diagnóstico se centra en alteraciones de la experiencia subjetiva del yo o del entorno, lo cual no está presente ni sugiere el caso descrito.
 
 ### Análisis:
@@ -2954,6 +3306,10 @@ En conclusión, el caso del niño no encaja con los criterios del trastorno
 
 ## H0809
 
+**Glosa de referencia (LA CATEGORÍA):** Alteración propuesta en la regulación del hilo autobiográfico: la persona organizaría su relato de vida de forma distinta cuando hay carga afectiva.
+
+**Respuesta a puntuar:**
+
 En base a la descripción del caso, la paciente acude al clínico principalmente por síntomas físicos asociados a la menopausia (sofocos y sudoración nocturna). No se menciona directamente que presente problemas con la organización de su relato de vida o alteraciones en el hilo autobiográfico cuando hay carga afectiva. Por lo tanto, no hay evidencia suficiente para diagnosticar una "LA CATEGORÍA" como se ha planteado en el post del foro.
 
 ### Evaluación:
@@ -2982,6 +3338,10 @@ Aunque no es un diagnóstico oficialmente reconocido, según la descripción dad
 ---
 
 ## H0810
+
+**Glosa de referencia (LA CATEGORÍA):** Trastorno reconocido en el que se altera la regulación de la experiencia de sí mismo y del entorno bajo ciertas condiciones.
+
+**Respuesta a puntuar:**
 
 ### Evaluación del Caso
 

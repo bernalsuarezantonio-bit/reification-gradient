@@ -44,3 +44,18 @@ Decisión del PI: ambas familias locales, sin modelos comerciales. Motivos regis
 cambian sin aviso; (2) **coherencia con la línea representacional** del estudio. La limitación
 correspondiente ("sin modelos frontier comerciales en la evidencia") la declarará el PI en
 `PLAN.md` antes del freeze; aquí solo se registra la decisión, no se decide.
+
+## Modelo JUEZ (Fase 4, enmienda A1 del PLAN — 2026-07-14)
+
+Tercera familia, independiente de ambos generadores (evita auto-preferencia). Digest fijado por la
+misma razón que arriba (los tags son punteros móviles).
+
+| campo | gemma2:27b |
+|---|---|
+| **digest (sha256)** | `53261bc9c192c1cb5fcc898dd3aa15da093f5ab6f08e17e48cf838bb1c58abfe` |
+| tamaño | 15 628 378 336 B (15.63 GB); footprint cargado 17.30 GB |
+| familia | gemma2 · 27.2B · Q4_0 |
+| pull | 2026-07-14 (`POST /api/pull`, esta sesión) |
+| VRAM | **100% GPU** verificado a `num_ctx=2048` (17.30/17.30 GB) |
+| params de scoring | temperature 0 · num_ctx 2048 · JSON estricto de 6 claves, reintentos acotados |
+

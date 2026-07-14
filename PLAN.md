@@ -127,3 +127,25 @@ Sandbox-only. No fabricated disorder content is published or seeded outside this
 ## 8. Deviations log
 
 Record any post-freeze change here with date and rationale (keeps the prereg honest).
+
+## 9. Amendments (post-freeze, additive)
+
+Additive clarifications that CLOSE GAPS in the frozen preregistration without editing any sealed
+decision. Each is dated. Sealed content (design, N/R, anchor DPDR, hypotheses, sealed generation
+params) is never modified here — these entries only fill instrument details left unspecified at freeze.
+
+### A1 — Blinded judge model (2026-07-14)
+
+The frozen PLAN validated the design against a "blinded LLM judge" but did not name the model. This
+amendment fixes it, **before any judge scoring was run** (no judge output existed or had been read at
+amendment time — the decision is pre-data with respect to the judge):
+
+- **Judge = `gemma2:27b`** (local, via Ollama; sha256 digest pinned in
+  `phase2/recognition_probe/MODELS.md`).
+- **Rationale:** a **third model family**, independent of BOTH response-generating families
+  (`mistral-small3.1:24b`, `qwen2.5:32b`), chosen to avoid self-preference (a generator scoring its
+  own outputs). Kept distinct from the Phase-5 human/second rater.
+- **Judge scoring params:** temperature 0 (deterministic scoring), `num_ctx` 2048; output is
+  strict JSON of the six rubric keys with bounded retries (see `src/score.py`, `scoring/judge_prompt.md`).
+
+This closes an unspecified-instrument gap; it does not alter any sealed design decision.
