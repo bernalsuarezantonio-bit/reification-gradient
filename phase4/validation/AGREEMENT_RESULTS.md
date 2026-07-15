@@ -45,3 +45,24 @@ repetir · **<0.667** rediseño (PLAN §6: si <.70, la DV pasa a scoring humano-
 Las predicciones fechadas de `ALPHA_PREDICTIONS.md` se cumplen: #2 (`criteria_invented`) es la peor;
 `diagnosis` la más fiable. Registro honesto: el instrumento es fiable para *si* diagnostica, no para
 *cuánta estructura* cuenta.
+
+---
+
+## `criteria_invented` v2 (enmienda A3) — REVALIDACIÓN vs las 48 fijas
+
+Re-juzgado solo `criteria_invented` con `judge_prompt_criteria_v2.md` (regla de individuación desde la
+especificación, no de los casos), gemma2:27b, 1080/1080 (0 malformados). Vara fija: los mismos 48 ratings.
+
+| versión | α | IC95 | crudo (≤±1) |
+|---|--:|---|--:|
+| v1 | −0.276 | [−0.48, −0.06] | 22.9% (45.8%) |
+| **v2** | **−0.370** | **[−0.56, −0.17]** | 18.8% (37.5%) |
+
+**Criterio endurecido (α ≥ 0.80 Y IC-inferior > 0.667): NO PASA.** v2 **empeoró** el acuerdo (α más
+negativo, crudo más bajo). El rediseño no rescata la DV: la regla de individuación afinada no aproximó
+al juez a la vara humana (el humano cuenta muy conservador, 34/48 = 0; el juez, incluso con la regla
+estricta, individua de otro modo).
+
+**Consecuencia (A3):** paro. `criteria_invented` NO queda validada como medida automática. La
+degradación a **exploratoria** (submuestra humana n=48 como única medida confirmatoria de esta DV) es
+decisión del PI. `diagnosis` sigue validada (α=.83/.96) y no se ve afectada.
