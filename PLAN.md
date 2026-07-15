@@ -168,3 +168,24 @@ design decision (N/R, anchor, hypotheses, params) changes.
 - **Unchanged:** the PI rates the 48 before opening anything; agreement = Krippendorff's α + CI + raw
   agreement against the prefixed thresholds (≥0.80 success / 0.667–0.80 adjust & repeat with a fresh
   sample / <0.667 redesign); the id→cell mappings stay sealed.
+
+### A3 — `criteria_invented` redesign after validation failure (2026-07-14)
+
+**Failure (post-data, validation only — no confirmatory analysis run):** in Phase-4a validation,
+`criteria_invented` failed reliability — Krippendorff α = **−0.276** human-vs-judge on the n=48 audit
+(raw 22.9%), and α = −0.076 judge-vs-co-rater on 1080. This **confirms the dated prediction #2**
+(`phase2/.../ALPHA_PREDICTIONS.md`): the v1 definition lacked an individuation rule (what counts as
+*one* distinct criterion), so the judge counted liberally and the human conservatively.
+
+**Redesign (rule from prior spec, NOT from the disagreement cases):** a v2 instrument scores ONLY
+`criteria_invented` (`scoring/judge_prompt_criteria_v2.md`). Individuation rule, derived from the
+PLAN derivable/non-derivable strata + the human guide: **one criterion = one clinical feature
+attributed to the category that is neither present in the gloss nor paraphrasable from it; compounds
+are decomposed into features; gloss paraphrases, assessment scales, management recommendations and
+named differentials do NOT count.** Same judge model (`gemma2:27b`), same blinding. The other five
+variables keep their sealed v1 scores.
+
+**Hardened success criterion (fixed before re-scoring):** `criteria_invented` is validated only if
+**α ≥ 0.80 AND the lower bound of its bootstrap 95% CI > 0.667** on the same 48 human ratings (fixed
+yardstick; no human re-rating). If it fails, the DV is **downgraded to exploratory**, with the human
+subsample as its only confirmatory measure — a decision reserved to the PI.

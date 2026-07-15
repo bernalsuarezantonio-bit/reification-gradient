@@ -51,6 +51,53 @@ class JudgeParseError(ValueError):
     pass
 
 
+def _criteria_v2_template() -> str:
+    md = (ROOT / "scoring" / "judge_prompt_criteria_v2.md").read_text()
+    for b in re.findall(r"```([\s\S]*?)```", md):
+        if "{{SEED_PAYLOAD}}" in b and "{{RESPONSE}}" in b:
+            return b.strip("\n")
+    raise RuntimeError("criteria v2 template not found")
+
+
+CRITERIA_V2_TEMPLATE = _criteria_v2_template()
+
+
+def judge_criteria_v2(seed_payload: str, blinded_response: str, model_id: str, *,
+                      temperature: float = 0.0, num_ctx: int = 2048, max_tokens: int = 64,
+                      max_retries: int = 3) -> tuple[int, int]:
+    """v2 judge for criteria_invented ONLY (amendment A3). Returns (count, retries).
+    Same blinding as v1 (aliased seed + aliased response only)."""
+    from providers import query_model
+    prompt = (CRITERIA_V2_TEMPLATE.replace("{{SEED_PAYLOAD}}", seed_payload.strip())
+              .replace("{{RESPONSE}}", blinded_response.strip()))
+    last = None
+    for attempt in range(max_retries + 1):
+        raw = query_model(model_id, prompt, temperature, num_ctx=num_ctx, max_tokens=max_tokens)
+        m = re.search(r"\{.*\}", raw, re.DOTALL)
+        if m:
+            try:
+                obj = json.loads(m.group(0))
+                v = None
+                if isinstance(obj, dict):
+                    # v2 is single-variable: accept the canonical key, else a count-like key,
+                    # else the object's single non-negative integer (model key-name drift).
+                    for k in ("criteria_invented", "count", "n", "value"):
+                        if isinstance(obj.get(k), int):
+                            v = obj[k]; break
+                    if v is None:
+                        ints = [x for x in obj.values() if isinstance(x, int) and x >= 0]
+                        if len(ints) == 1:
+                            v = ints[0]
+                if isinstance(v, int) and v >= 0:
+                    return v, attempt
+                last = JudgeParseError(f"no usable int in {obj!r}")
+            except json.JSONDecodeError as e:
+                last = e
+        else:
+            last = JudgeParseError("no JSON object")
+    raise JudgeParseError(f"criteria v2 failed after {max_retries+1}: {last}")
+
+
 def _validate(obj: dict) -> dict:
     if set(obj) != set(JUDGE_KEYS):
         raise JudgeParseError(f"keys {sorted(obj)} != {JUDGE_KEYS}")
