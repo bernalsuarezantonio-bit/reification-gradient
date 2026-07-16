@@ -1,0 +1,1053 @@
+{
+ "human_criteria_n48": {
+  "note": "CONFIRMATORY-GRADE measure for criteria_invented per A4 (n=48, critical cells). Descriptive only: no inferential test (n per cell = 12).",
+  "by_cell": [
+   {
+    "disorder": "DN_plausible",
+    "level": "L1_forum",
+    "n": 12,
+    "mean": 0.5,
+    "min": 0,
+    "max": 2,
+    "pct_zero": 0.5833333333333334
+   },
+   {
+    "disorder": "DN_plausible",
+    "level": "L5_pseudodsm",
+    "n": 12,
+    "mean": 0.25,
+    "min": 0,
+    "max": 1,
+    "pct_zero": 0.75
+   },
+   {
+    "disorder": "incoherent",
+    "level": "L1_forum",
+    "n": 12,
+    "mean": 0.08333333333333333,
+    "min": 0,
+    "max": 1,
+    "pct_zero": 0.9166666666666666
+   },
+   {
+    "disorder": "incoherent",
+    "level": "L5_pseudodsm",
+    "n": 12,
+    "mean": 0.5833333333333334,
+    "min": 0,
+    "max": 3,
+    "pct_zero": 0.5833333333333334
+   }
+  ],
+  "by_cell_family": [
+   {
+    "disorder": "DN_plausible",
+    "level": "L1_forum",
+    "family": "mistral-small3.1:24b",
+    "n": 6,
+    "mean": 0.5,
+    "min": 0,
+    "max": 1
+   },
+   {
+    "disorder": "DN_plausible",
+    "level": "L1_forum",
+    "family": "qwen2.5:32b",
+    "n": 6,
+    "mean": 0.5,
+    "min": 0,
+    "max": 2
+   },
+   {
+    "disorder": "DN_plausible",
+    "level": "L5_pseudodsm",
+    "family": "mistral-small3.1:24b",
+    "n": 6,
+    "mean": 0.5,
+    "min": 0,
+    "max": 1
+   },
+   {
+    "disorder": "DN_plausible",
+    "level": "L5_pseudodsm",
+    "family": "qwen2.5:32b",
+    "n": 6,
+    "mean": 0.0,
+    "min": 0,
+    "max": 0
+   },
+   {
+    "disorder": "incoherent",
+    "level": "L1_forum",
+    "family": "mistral-small3.1:24b",
+    "n": 6,
+    "mean": 0.16666666666666666,
+    "min": 0,
+    "max": 1
+   },
+   {
+    "disorder": "incoherent",
+    "level": "L1_forum",
+    "family": "qwen2.5:32b",
+    "n": 6,
+    "mean": 0.0,
+    "min": 0,
+    "max": 0
+   },
+   {
+    "disorder": "incoherent",
+    "level": "L5_pseudodsm",
+    "family": "mistral-small3.1:24b",
+    "n": 6,
+    "mean": 0.3333333333333333,
+    "min": 0,
+    "max": 1
+   },
+   {
+    "disorder": "incoherent",
+    "level": "L5_pseudodsm",
+    "family": "qwen2.5:32b",
+    "n": 6,
+    "mean": 0.8333333333333334,
+    "min": 0,
+    "max": 3
+   }
+  ]
+ },
+ "judge_criteria_v1_full": {
+  "WARNING": "NON-RELIABLE MEASURE. Human-vs-judge Krippendorff alpha = -0.276 (v1) / -0.370 (v2). Exploratory/descriptive only per A4; not interpretable as a reification count.",
+  "by_cell": [
+   {
+    "disorder": "DN_flagged",
+    "level": "L1_forum",
+    "n": 360,
+    "mean": 1.7861111111111112,
+    "sd": 1.0241248122538438,
+    "min": 0,
+    "max": 5
+   },
+   {
+    "disorder": "DN_flagged",
+    "level": "L2_coach_blog",
+    "n": 360,
+    "mean": 1.9583333333333333,
+    "sd": 0.9907300141828678,
+    "min": 0,
+    "max": 4
+   },
+   {
+    "disorder": "DN_flagged",
+    "level": "L3_wiki",
+    "n": 360,
+    "mean": 1.6861111111111111,
+    "sd": 1.0549400378418001,
+    "min": 0,
+    "max": 4
+   },
+   {
+    "disorder": "DN_flagged",
+    "level": "L4_preprint",
+    "n": 360,
+    "mean": 1.8444444444444446,
+    "sd": 1.0677455082755383,
+    "min": 0,
+    "max": 4
+   },
+   {
+    "disorder": "DN_flagged",
+    "level": "L5_pseudodsm",
+    "n": 360,
+    "mean": 1.4111111111111112,
+    "sd": 1.095897077944471,
+    "min": 0,
+    "max": 4
+   },
+   {
+    "disorder": "DN_plausible",
+    "level": "L1_forum",
+    "n": 359,
+    "mean": 1.8217270194986073,
+    "sd": 1.111884164176843,
+    "min": 0,
+    "max": 4
+   },
+   {
+    "disorder": "DN_plausible",
+    "level": "L2_coach_blog",
+    "n": 360,
+    "mean": 2.1277777777777778,
+    "sd": 1.0477754950771585,
+    "min": 0,
+    "max": 4
+   },
+   {
+    "disorder": "DN_plausible",
+    "level": "L3_wiki",
+    "n": 360,
+    "mean": 2.0305555555555554,
+    "sd": 1.0747337415794593,
+    "min": 0,
+    "max": 4
+   },
+   {
+    "disorder": "DN_plausible",
+    "level": "L4_preprint",
+    "n": 360,
+    "mean": 1.8305555555555555,
+    "sd": 1.0458352060635703,
+    "min": 0,
+    "max": 4
+   },
+   {
+    "disorder": "DN_plausible",
+    "level": "L5_pseudodsm",
+    "n": 360,
+    "mean": 1.5305555555555554,
+    "sd": 1.1116800616989935,
+    "min": 0,
+    "max": 4
+   },
+   {
+    "disorder": "incoherent",
+    "level": "L1_forum",
+    "n": 359,
+    "mean": 2.1114206128133706,
+    "sd": 1.334483742465053,
+    "min": 0,
+    "max": 6
+   },
+   {
+    "disorder": "incoherent",
+    "level": "L2_coach_blog",
+    "n": 359,
+    "mean": 2.2367688022284122,
+    "sd": 1.2108386813775276,
+    "min": 0,
+    "max": 6
+   },
+   {
+    "disorder": "incoherent",
+    "level": "L3_wiki",
+    "n": 359,
+    "mean": 1.6991643454038998,
+    "sd": 1.1788519996848428,
+    "min": 0,
+    "max": 6
+   },
+   {
+    "disorder": "incoherent",
+    "level": "L4_preprint",
+    "n": 353,
+    "mean": 2.1104815864022664,
+    "sd": 0.8269110409762257,
+    "min": 0,
+    "max": 4
+   },
+   {
+    "disorder": "incoherent",
+    "level": "L5_pseudodsm",
+    "n": 358,
+    "mean": 1.8826815642458101,
+    "sd": 1.088612595420644,
+    "min": 0,
+    "max": 4
+   },
+   {
+    "disorder": "real_anchor",
+    "level": "L1_forum",
+    "n": 352,
+    "mean": 2.8579545454545454,
+    "sd": 1.011187740976248,
+    "min": 0,
+    "max": 5
+   },
+   {
+    "disorder": "real_anchor",
+    "level": "L2_coach_blog",
+    "n": 354,
+    "mean": 2.957627118644068,
+    "sd": 0.9732460897518007,
+    "min": 0,
+    "max": 5
+   },
+   {
+    "disorder": "real_anchor",
+    "level": "L3_wiki",
+    "n": 359,
+    "mean": 2.8272980501392757,
+    "sd": 0.9414307415235457,
+    "min": 0,
+    "max": 5
+   },
+   {
+    "disorder": "real_anchor",
+    "level": "L4_preprint",
+    "n": 358,
+    "mean": 2.3184357541899443,
+    "sd": 0.777301090991768,
+    "min": 0,
+    "max": 5
+   },
+   {
+    "disorder": "real_anchor",
+    "level": "L5_pseudodsm",
+    "n": 359,
+    "mean": 2.331476323119777,
+    "sd": 0.9652543554973241,
+    "min": 0,
+    "max": 5
+   }
+  ],
+  "by_family": [
+   {
+    "family": "mistral-small3.1:24b",
+    "mean": 2.4282924107142856
+   },
+   {
+    "family": "qwen2.5:32b",
+    "mean": 1.704323570432357
+   }
+  ]
+ },
+ "other_dvs": {
+  "confidence": {
+   "reliability_status": "judge-vs-co-rater alpha = -0.188 (raw 50.8%) — NOT reliable",
+   "by_cell": [
+    {
+     "disorder": "DN_flagged",
+     "level": "L1_forum",
+     "mean": 0.6619444444444444,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L2_coach_blog",
+     "mean": 0.6969444444444446,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L3_wiki",
+     "mean": 0.6736111111111112,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L4_preprint",
+     "mean": 0.7061111111111111,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L5_pseudodsm",
+     "mean": 0.7394444444444446,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L1_forum",
+     "mean": 0.6584958217270195,
+     "n": 359
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L2_coach_blog",
+     "mean": 0.7466666666666668,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L3_wiki",
+     "mean": 0.7083333333333334,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L4_preprint",
+     "mean": 0.7166666666666667,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L5_pseudodsm",
+     "mean": 0.6869444444444445,
+     "n": 360
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L1_forum",
+     "mean": 0.3044568245125348,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L2_coach_blog",
+     "mean": 0.4364902506963788,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L3_wiki",
+     "mean": 0.41782729805013913,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L4_preprint",
+     "mean": 0.5379603399433427,
+     "n": 353
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L5_pseudodsm",
+     "mean": 0.5111731843575418,
+     "n": 358
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L1_forum",
+     "mean": 0.5352272727272728,
+     "n": 352
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L2_coach_blog",
+     "mean": 0.5531073446327683,
+     "n": 354
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L3_wiki",
+     "mean": 0.5172701949860724,
+     "n": 359
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L4_preprint",
+     "mean": 0.6335195530726256,
+     "n": 358
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L5_pseudodsm",
+     "mean": 0.6066852367688023,
+     "n": 359
+    }
+   ],
+   "by_family": [
+    {
+     "family": "mistral-small3.1:24b",
+     "mean": 0.6030412946428572
+    },
+    {
+     "family": "qwen2.5:32b",
+     "mean": 0.6024267782426779
+    }
+   ]
+  },
+  "treatment_recommended": {
+   "reliability_status": "judge-vs-co-rater alpha = 0.350 (raw 73.8%) — low alpha, high raw (prevalence-imbalance paradox)",
+   "by_cell": [
+    {
+     "disorder": "DN_flagged",
+     "level": "L1_forum",
+     "mean": 0.45555555555555555,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L2_coach_blog",
+     "mean": 0.5638888888888889,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L3_wiki",
+     "mean": 0.4222222222222222,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L4_preprint",
+     "mean": 0.37222222222222223,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L5_pseudodsm",
+     "mean": 0.40555555555555556,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L1_forum",
+     "mean": 0.4763231197771588,
+     "n": 359
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L2_coach_blog",
+     "mean": 0.5527777777777778,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L3_wiki",
+     "mean": 0.5611111111111111,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L4_preprint",
+     "mean": 0.3888888888888889,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L5_pseudodsm",
+     "mean": 0.4861111111111111,
+     "n": 360
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L1_forum",
+     "mean": 0.5013927576601671,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L2_coach_blog",
+     "mean": 0.4178272980501393,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L3_wiki",
+     "mean": 0.4401114206128134,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L4_preprint",
+     "mean": 0.17847025495750707,
+     "n": 353
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L5_pseudodsm",
+     "mean": 0.24581005586592178,
+     "n": 358
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L1_forum",
+     "mean": 0.3977272727272727,
+     "n": 352
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L2_coach_blog",
+     "mean": 0.4406779661016949,
+     "n": 354
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L3_wiki",
+     "mean": 0.4818941504178273,
+     "n": 359
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L4_preprint",
+     "mean": 0.4134078212290503,
+     "n": 358
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L5_pseudodsm",
+     "mean": 0.40947075208913647,
+     "n": 359
+    }
+   ],
+   "by_family": [
+    {
+     "family": "mistral-small3.1:24b",
+     "mean": 0.3911830357142857
+    },
+    {
+     "family": "qwen2.5:32b",
+     "mean": 0.4705718270571827
+    }
+   ]
+  },
+  "differential_offered": {
+   "reliability_status": "judge-vs-co-rater alpha = 0.717 (raw 99.4%) — borderline alpha, high raw",
+   "by_cell": [
+    {
+     "disorder": "DN_flagged",
+     "level": "L1_forum",
+     "mean": 1.0,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L2_coach_blog",
+     "mean": 0.9916666666666667,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L3_wiki",
+     "mean": 0.9944444444444445,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L4_preprint",
+     "mean": 0.9916666666666667,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L5_pseudodsm",
+     "mean": 0.9944444444444445,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L1_forum",
+     "mean": 0.9916434540389972,
+     "n": 359
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L2_coach_blog",
+     "mean": 0.9944444444444445,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L3_wiki",
+     "mean": 1.0,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L4_preprint",
+     "mean": 0.9833333333333333,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L5_pseudodsm",
+     "mean": 0.9888888888888889,
+     "n": 360
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L1_forum",
+     "mean": 0.9916434540389972,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L2_coach_blog",
+     "mean": 0.9805013927576601,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L3_wiki",
+     "mean": 0.9832869080779945,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L4_preprint",
+     "mean": 0.9688385269121813,
+     "n": 353
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L5_pseudodsm",
+     "mean": 0.9329608938547486,
+     "n": 358
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L1_forum",
+     "mean": 0.9801136363636364,
+     "n": 352
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L2_coach_blog",
+     "mean": 0.9774011299435028,
+     "n": 354
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L3_wiki",
+     "mean": 0.9888579387186629,
+     "n": 359
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L4_preprint",
+     "mean": 0.9972067039106145,
+     "n": 358
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L5_pseudodsm",
+     "mean": 0.9916434540389972,
+     "n": 359
+    }
+   ],
+   "by_family": [
+    {
+     "family": "mistral-small3.1:24b",
+     "mean": 0.9815848214285714
+    },
+    {
+     "family": "qwen2.5:32b",
+     "mean": 0.9907949790794979
+    }
+   ]
+  },
+  "epistemic_flag": {
+   "reliability_status": "judge-vs-co-rater alpha = 0.547 (raw 84.2%) — low alpha, high raw",
+   "by_cell": [
+    {
+     "disorder": "DN_flagged",
+     "level": "L1_forum",
+     "mean": 0.21388888888888888,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L2_coach_blog",
+     "mean": 0.06111111111111111,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L3_wiki",
+     "mean": 0.2111111111111111,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L4_preprint",
+     "mean": 0.05,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L5_pseudodsm",
+     "mean": 0.08055555555555556,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L1_forum",
+     "mean": 0.116991643454039,
+     "n": 359
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L2_coach_blog",
+     "mean": 0.008333333333333333,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L3_wiki",
+     "mean": 0.025,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L4_preprint",
+     "mean": 0.0,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L5_pseudodsm",
+     "mean": 0.005555555555555556,
+     "n": 360
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L1_forum",
+     "mean": 0.9442896935933147,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L2_coach_blog",
+     "mean": 0.6267409470752089,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L3_wiki",
+     "mean": 0.6044568245125348,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L4_preprint",
+     "mean": 0.07365439093484419,
+     "n": 353
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L5_pseudodsm",
+     "mean": 0.16759776536312848,
+     "n": 358
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L1_forum",
+     "mean": 0.0,
+     "n": 352
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L2_coach_blog",
+     "mean": 0.0,
+     "n": 354
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L3_wiki",
+     "mean": 0.0,
+     "n": 359
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L4_preprint",
+     "mean": 0.0,
+     "n": 358
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L5_pseudodsm",
+     "mean": 0.005571030640668524,
+     "n": 359
+    }
+   ],
+   "by_family": [
+    {
+     "family": "mistral-small3.1:24b",
+     "mean": 0.15094866071428573
+    },
+    {
+     "family": "qwen2.5:32b",
+     "mean": 0.16903765690376568
+    }
+   ]
+  },
+  "emergent_symptom_tokens": {
+   "reliability_status": "lexical, deterministic (not judge-scored); no inter-rater alpha",
+   "by_cell": [
+    {
+     "disorder": "DN_flagged",
+     "level": "L1_forum",
+     "mean": 1.3277777777777777,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L2_coach_blog",
+     "mean": 1.2833333333333334,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L3_wiki",
+     "mean": 1.2138888888888888,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L4_preprint",
+     "mean": 1.175,
+     "n": 360
+    },
+    {
+     "disorder": "DN_flagged",
+     "level": "L5_pseudodsm",
+     "mean": 1.3277777777777777,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L1_forum",
+     "mean": 1.1782729805013927,
+     "n": 359
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L2_coach_blog",
+     "mean": 1.2305555555555556,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L3_wiki",
+     "mean": 1.2166666666666666,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L4_preprint",
+     "mean": 1.2,
+     "n": 360
+    },
+    {
+     "disorder": "DN_plausible",
+     "level": "L5_pseudodsm",
+     "mean": 1.211111111111111,
+     "n": 360
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L1_forum",
+     "mean": 1.50974930362117,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L2_coach_blog",
+     "mean": 1.2729805013927578,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L3_wiki",
+     "mean": 1.192200557103064,
+     "n": 359
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L4_preprint",
+     "mean": 0.9688385269121813,
+     "n": 353
+    },
+    {
+     "disorder": "incoherent",
+     "level": "L5_pseudodsm",
+     "mean": 0.9301675977653632,
+     "n": 358
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L1_forum",
+     "mean": 1.4829545454545454,
+     "n": 352
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L2_coach_blog",
+     "mean": 1.5254237288135593,
+     "n": 354
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L3_wiki",
+     "mean": 1.532033426183844,
+     "n": 359
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L4_preprint",
+     "mean": 1.324022346368715,
+     "n": 358
+    },
+    {
+     "disorder": "real_anchor",
+     "level": "L5_pseudodsm",
+     "mean": 1.4094707520891365,
+     "n": 359
+    }
+   ],
+   "by_family": [
+    {
+     "family": "mistral-small3.1:24b",
+     "mean": 1.3521205357142858
+    },
+    {
+     "family": "qwen2.5:32b",
+     "mean": 1.198884239888424
+    }
+   ]
+  }
+ },
+ "family_differences": {
+  "diagnosis_by_family_condition": [
+   {
+    "family": "mistral-small3.1:24b",
+    "disorder": "DN_flagged",
+    "mean_diagnosis": 0.5544444444444444,
+    "n": 900
+   },
+   {
+    "family": "mistral-small3.1:24b",
+    "disorder": "DN_plausible",
+    "mean_diagnosis": 0.6066666666666667,
+    "n": 900
+   },
+   {
+    "family": "mistral-small3.1:24b",
+    "disorder": "incoherent",
+    "mean_diagnosis": 0.49048152295632697,
+    "n": 893
+   },
+   {
+    "family": "mistral-small3.1:24b",
+    "disorder": "real_anchor",
+    "mean_diagnosis": 0.4511784511784512,
+    "n": 891
+   },
+   {
+    "family": "qwen2.5:32b",
+    "disorder": "DN_flagged",
+    "mean_diagnosis": 0.41888888888888887,
+    "n": 900
+   },
+   {
+    "family": "qwen2.5:32b",
+    "disorder": "DN_plausible",
+    "mean_diagnosis": 0.44493882091212456,
+    "n": 899
+   },
+   {
+    "family": "qwen2.5:32b",
+    "disorder": "incoherent",
+    "mean_diagnosis": 0.21787709497206703,
+    "n": 895
+   },
+   {
+    "family": "qwen2.5:32b",
+    "disorder": "real_anchor",
+    "mean_diagnosis": 0.1840628507295174,
+    "n": 891
+   }
+  ]
+ },
+ "verbatims_meta": {
+  "seed": 20260716,
+  "candidates_DN_diagnosis1": 946,
+  "hits_by_kind": {
+   "a_prevalencia_epidemiologia": 64,
+   "b_criterios_numerados": 926,
+   "c_protocolo_tratamiento": 288,
+   "d_comorbilidades": 4
+  },
+  "n_reported": 15,
+  "note": "ILLUSTRATIVE examples only; pattern-matched, not a validated count."
+ }
+}

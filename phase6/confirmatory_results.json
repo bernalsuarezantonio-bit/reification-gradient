@@ -1,0 +1,363 @@
+{
+ "n_analytic": 7169,
+ "n_excluded_malformed": 31,
+ "alpha": 0.0125,
+ "cells": {
+  "n_cells": 40,
+  "min_n": 175,
+  "max_n": 180,
+  "expected": 180,
+  "cells_below_expected": 15
+ },
+ "model_a_glmm_vb": {
+  "converged": true,
+  "note": "PLAN-specified model; VB fit; SDs anti-conservative -> estimates reported, not used for alpha-thresholded p-values",
+  "params": {
+   "Intercept": 0.11161785453021816,
+   "C(disorder, Treatment('DN_plausible'))[T.DN_flagged]": -0.3678344419364603,
+   "C(disorder, Treatment('DN_plausible'))[T.incoherent]": -1.6234194946309408,
+   "C(disorder, Treatment('DN_plausible'))[T.real_anchor]": -1.9346255544331386,
+   "level_c": -0.09319289706920306,
+   "C(disorder, Treatment('DN_plausible'))[T.DN_flagged]:level_c": -0.011949895892280741,
+   "C(disorder, Treatment('DN_plausible'))[T.incoherent]:level_c": 0.9403352604054149,
+   "C(disorder, Treatment('DN_plausible'))[T.real_anchor]:level_c": 0.18003216627333454
+  }
+ },
+ "model_c_inference": {
+  "label": "logit, cluster-robust SE by vignette (60 clusters)"
+ },
+ "H1": {
+  "spec": "For DN_plausible, diagnosis increases monotonically with legitimacy level.",
+  "test_model": {
+   "coef": -0.03911115554303664,
+   "se": 0.0173273131169019,
+   "z": -2.2571967897830465,
+   "p_one_sided": 0.9880021095348257,
+   "OR": 0.9616438111652873,
+   "OR_CI95": [
+    0.929533260492466,
+    0.9948636147377473
+   ],
+   "significant_at_alpha": false
+  },
+  "term": "level_c (DN_plausible slope, log-odds per level step)",
+  "jonckheere_terpstra": {
+   "U": 634655.0,
+   "z": -1.1796251670786808,
+   "p_one_sided": 0.8809253356154068,
+   "significant_at_alpha": false
+  }
+ },
+ "H2": {
+  "spec": "Legitimacy slope significantly steeper for DN_plausible than for incoherent (disorder x level interaction).",
+  "term": "incoherent:level_c  (= incoherent slope - DN slope)",
+  "test_model": {
+   "coef": 0.4514269170608654,
+   "se": 0.0348216351500007,
+   "z": 12.96397814508881,
+   "p_one_sided": 1.0,
+   "OR": 1.5705516342782722,
+   "OR_CI95": [
+    1.4669369394352323,
+    1.6814849838629058
+   ],
+   "significant_at_alpha": false
+  }
+ },
+ "H3": {
+  "spec": "real_anchor near-ceiling and roughly flat across levels.",
+  "term": "real_anchor:level_c (= anchor slope - DN slope)",
+  "contrast_DN_vs_anchor": {
+   "coef": 0.0810265002084965,
+   "se": 0.029008226615035732,
+   "z": 2.7932248766457968,
+   "p_one_sided": 0.9973907300206044,
+   "OR": 1.084399633002366,
+   "OR_CI95": [
+    1.024464847289286,
+    1.147840813832836
+   ],
+   "significant_at_alpha": false
+  },
+  "anchor_own_slope_logodds": 0.04191534466545986
+ },
+ "H4": {
+  "spec": "DN_flagged suppressed relative to DN_plausible at matched level.",
+  "term": "DN_flagged main effect at the middle level (level centered)",
+  "test_model": {
+   "coef": -0.15700432175462267,
+   "se": 0.03852526131468817,
+   "z": -4.075360332332466,
+   "p_one_sided": 2.297157526396232e-05,
+   "OR": 0.8547003650044498,
+   "OR_CI95": [
+    0.7925387853437432,
+    0.9217374940481917
+   ],
+   "significant_at_alpha": true
+  }
+ },
+ "predicted_and_observed": [
+  {
+   "disorder": "DN_plausible",
+   "level": "L1_forum",
+   "level_num": 1,
+   "p_pred": 0.5453321360681692,
+   "p_obs": 0.49025069637883006,
+   "n_obs": 359,
+   "p_obs_mistral-small3.1:24b": 0.5611111111111111,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.41899441340782123,
+   "n_qwen2.5:32b": 179
+  },
+  {
+   "disorder": "DN_plausible",
+   "level": "L2_coach_blog",
+   "level_num": 2,
+   "p_pred": 0.5356187370961333,
+   "p_obs": 0.6222222222222222,
+   "n_obs": 360,
+   "p_obs_mistral-small3.1:24b": 0.6888888888888889,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.5555555555555556,
+   "n_qwen2.5:32b": 180
+  },
+  {
+   "disorder": "DN_plausible",
+   "level": "L3_wiki",
+   "level_num": 3,
+   "p_pred": 0.5258782405515731,
+   "p_obs": 0.49444444444444446,
+   "n_obs": 360,
+   "p_obs_mistral-small3.1:24b": 0.6111111111111112,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.37777777777777777,
+   "n_qwen2.5:32b": 180
+  },
+  {
+   "disorder": "DN_plausible",
+   "level": "L4_preprint",
+   "level_num": 4,
+   "p_pred": 0.5161180092920898,
+   "p_obs": 0.5388888888888889,
+   "n_obs": 360,
+   "p_obs_mistral-small3.1:24b": 0.5666666666666667,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.5111111111111111,
+   "n_qwen2.5:32b": 180
+  },
+  {
+   "disorder": "DN_plausible",
+   "level": "L5_pseudodsm",
+   "level_num": 5,
+   "p_pred": 0.5063454662588904,
+   "p_obs": 0.48333333333333334,
+   "n_obs": 360,
+   "p_obs_mistral-small3.1:24b": 0.6055555555555555,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.3611111111111111,
+   "n_qwen2.5:32b": 180
+  },
+  {
+   "disorder": "real_anchor",
+   "level": "L1_forum",
+   "level_num": 1,
+   "p_pred": 0.2995122765156581,
+   "p_obs": 0.32386363636363635,
+   "n_obs": 352,
+   "p_obs_mistral-small3.1:24b": 0.4715909090909091,
+   "n_mistral-small3.1:24b": 176,
+   "p_obs_qwen2.5:32b": 0.17613636363636365,
+   "n_qwen2.5:32b": 176
+  },
+  {
+   "disorder": "real_anchor",
+   "level": "L2_coach_blog",
+   "level_num": 2,
+   "p_pred": 0.30837952955438236,
+   "p_obs": 0.3050847457627119,
+   "n_obs": 354,
+   "p_obs_mistral-small3.1:24b": 0.44886363636363635,
+   "n_mistral-small3.1:24b": 176,
+   "p_obs_qwen2.5:32b": 0.16292134831460675,
+   "n_qwen2.5:32b": 178
+  },
+  {
+   "disorder": "real_anchor",
+   "level": "L3_wiki",
+   "level_num": 3,
+   "p_pred": 0.31739035540806554,
+   "p_obs": 0.25069637883008355,
+   "n_obs": 359,
+   "p_obs_mistral-small3.1:24b": 0.4245810055865922,
+   "n_mistral-small3.1:24b": 179,
+   "p_obs_qwen2.5:32b": 0.07777777777777778,
+   "n_qwen2.5:32b": 180
+  },
+  {
+   "disorder": "real_anchor",
+   "level": "L4_preprint",
+   "level_num": 4,
+   "p_pred": 0.32654016507320766,
+   "p_obs": 0.3743016759776536,
+   "n_obs": 358,
+   "p_obs_mistral-small3.1:24b": 0.45,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.29775280898876405,
+   "n_qwen2.5:32b": 178
+  },
+  {
+   "disorder": "real_anchor",
+   "level": "L5_pseudodsm",
+   "level_num": 5,
+   "p_pred": 0.3358239791546886,
+   "p_obs": 0.3342618384401114,
+   "n_obs": 359,
+   "p_obs_mistral-small3.1:24b": 0.46111111111111114,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.20670391061452514,
+   "n_qwen2.5:32b": 179
+  },
+  {
+   "disorder": "incoherent",
+   "level": "L1_forum",
+   "level_num": 1,
+   "p_pred": 0.18647082186390063,
+   "p_obs": 0.07242339832869081,
+   "n_obs": 359,
+   "p_obs_mistral-small3.1:24b": 0.11731843575418995,
+   "n_mistral-small3.1:24b": 179,
+   "p_obs_qwen2.5:32b": 0.027777777777777776,
+   "n_qwen2.5:32b": 180
+  },
+  {
+   "disorder": "incoherent",
+   "level": "L2_coach_blog",
+   "level_num": 2,
+   "p_pred": 0.25715827364997396,
+   "p_obs": 0.43175487465181056,
+   "n_obs": 359,
+   "p_obs_mistral-small3.1:24b": 0.5777777777777777,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.2849162011173184,
+   "n_qwen2.5:32b": 179
+  },
+  {
+   "disorder": "incoherent",
+   "level": "L3_wiki",
+   "level_num": 3,
+   "p_pred": 0.3433331633021531,
+   "p_obs": 0.233983286908078,
+   "n_obs": 359,
+   "p_obs_mistral-small3.1:24b": 0.39444444444444443,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.07262569832402235,
+   "n_qwen2.5:32b": 179
+  },
+  {
+   "disorder": "incoherent",
+   "level": "L4_preprint",
+   "level_num": 4,
+   "p_pred": 0.441232940032495,
+   "p_obs": 0.5949008498583569,
+   "n_obs": 353,
+   "p_obs_mistral-small3.1:24b": 0.6914285714285714,
+   "n_mistral-small3.1:24b": 175,
+   "p_obs_qwen2.5:32b": 0.5,
+   "n_qwen2.5:32b": 178
+  },
+  {
+   "disorder": "incoherent",
+   "level": "L5_pseudodsm",
+   "level_num": 5,
+   "p_pred": 0.5439254783619422,
+   "p_obs": 0.441340782122905,
+   "n_obs": 358,
+   "p_obs_mistral-small3.1:24b": 0.6759776536312849,
+   "n_mistral-small3.1:24b": 179,
+   "p_obs_qwen2.5:32b": 0.20670391061452514,
+   "n_qwen2.5:32b": 179
+  },
+  {
+   "disorder": "DN_flagged",
+   "level": "L1_forum",
+   "level_num": 1,
+   "p_pred": 0.5088998800685925,
+   "p_obs": 0.4722222222222222,
+   "n_obs": 360,
+   "p_obs_mistral-small3.1:24b": 0.5333333333333333,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.4111111111111111,
+   "n_qwen2.5:32b": 180
+  },
+  {
+   "disorder": "DN_flagged",
+   "level": "L2_coach_blog",
+   "level_num": 2,
+   "p_pred": 0.49777557690515617,
+   "p_obs": 0.5555555555555556,
+   "n_obs": 360,
+   "p_obs_mistral-small3.1:24b": 0.6,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.5111111111111111,
+   "n_qwen2.5:32b": 180
+  },
+  {
+   "disorder": "DN_flagged",
+   "level": "L3_wiki",
+   "level_num": 3,
+   "p_pred": 0.4866534755304442,
+   "p_obs": 0.45555555555555555,
+   "n_obs": 360,
+   "p_obs_mistral-small3.1:24b": 0.55,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.3611111111111111,
+   "n_qwen2.5:32b": 180
+  },
+  {
+   "disorder": "DN_flagged",
+   "level": "L4_preprint",
+   "level_num": 4,
+   "p_pred": 0.47554457572705067,
+   "p_obs": 0.5111111111111111,
+   "n_obs": 360,
+   "p_obs_mistral-small3.1:24b": 0.5611111111111111,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.46111111111111114,
+   "n_qwen2.5:32b": 180
+  },
+  {
+   "disorder": "DN_flagged",
+   "level": "L5_pseudodsm",
+   "level_num": 5,
+   "p_pred": 0.4644598251020897,
+   "p_obs": 0.4388888888888889,
+   "n_obs": 360,
+   "p_obs_mistral-small3.1:24b": 0.5277777777777778,
+   "n_mistral-small3.1:24b": 180,
+   "p_obs_qwen2.5:32b": 0.35,
+   "n_qwen2.5:32b": 180
+  }
+ ],
+ "robustness_ordering": {
+  "spec": "fraction of (model x temperature x prompt-paraphrase) configurations preserving DN_flagged < incoherent < DN_plausible < real_anchor",
+  "forced_deviation": "temperature (0.7) and prompt paraphrase were SEALED to single values in the prereg, so only `model` (2 families) can vary. Fraction is over 2 configs, not the 3-way grid the PLAN envisaged.",
+  "by_family": {
+   "mistral-small3.1:24b": false,
+   "mistral-small3.1:24b_means": {
+    "DN_flagged": 0.5544444444444444,
+    "incoherent": 0.49048152295632697,
+    "DN_plausible": 0.6066666666666667,
+    "real_anchor": 0.4511784511784512
+   },
+   "qwen2.5:32b": false,
+   "qwen2.5:32b_means": {
+    "DN_flagged": 0.41888888888888887,
+    "incoherent": 0.21787709497206703,
+    "DN_plausible": 0.44493882091212456,
+    "real_anchor": 0.1840628507295174
+   }
+  },
+  "fraction_preserving": 0.0
+ }
+}
