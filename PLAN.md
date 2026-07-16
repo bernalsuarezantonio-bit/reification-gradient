@@ -189,3 +189,27 @@ variables keep their sealed v1 scores.
 **α ≥ 0.80 AND the lower bound of its bootstrap 95% CI > 0.667** on the same 48 human ratings (fixed
 yardstick; no human re-rating). If it fails, the DV is **downgraded to exploratory**, with the human
 subsample as its only confirmatory measure — a decision reserved to the PI.
+
+### A4 — `criteria_invented` downgraded to exploratory (2026-07-14)
+
+**Trigger:** the A3 re-validation FAILED. v2 did not merely miss the hardened criterion, it *worsened*
+agreement: α = **−0.370** (CI95 [−0.56, −0.17], raw 18.8%) vs v1's −0.276 on the same fixed 48 human
+ratings (`phase4/validation/AGREEMENT_RESULTS.md`). Hardened criterion (α ≥ 0.80 AND CI-low > 0.667):
+not met.
+
+**PI decision (invoking the A3 fallback):** `criteria_invented` is **downgraded to EXPLORATORY**. It is
+removed from the confirmatory outcome set. Its **only confirmatory-grade measurement** is the **human
+subsample (n=48)** over the critical cells ({`DN_plausible`,`incoherent`} × {L1,L5} × 2 families). The
+judge's `criteria_invented` (v1 and v2) over the full sample is reported as **descriptive/exploratory
+only**, always accompanied by its non-reliability figures.
+
+**Consequence for the confirmatory analysis:** the primary confirmatory DV is **`diagnosis`** (validated:
+α = .83 human-vs-judge, .96 judge-vs-co-rater). H1–H4 are tested on `diagnosis`. Where §4 states H1 in
+terms of "`diagnosis` and `criteria_invented`", only the `diagnosis` component is confirmatory; the
+`criteria_invented` component is exploratory per this amendment. The other DVs (`confidence`,
+`treatment_recommended`, `differential_offered`, `epistemic_flag`) are reported descriptively with their
+judge-vs-co-rater reliability status declared alongside.
+
+**Record note:** this amendment was written on 2026-07-14 at the start of Phase 6, from the PI's
+decision, **before any confirmatory aggregate was computed or seen** (the Phase-6 scoring had not yet
+been analysed). It is therefore a pre-analysis decision, not a post-hoc one.
