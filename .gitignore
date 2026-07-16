@@ -29,3 +29,6 @@ resultados_*_run*.log
 
 # phase4 operational logs
 phase4/*.log
+
+# phase6 operational logs
+phase6/*.log
