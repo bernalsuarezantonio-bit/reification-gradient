@@ -1,30 +1,164 @@
-# Reification Gradient
+# Reification Gradient — Study 1 (behavioral) of *"Held but not heeded"*
 
-Does an LLM treat an *invented* diagnostic category as increasingly real as the **authority**
-of its source rises — and does it *fabricate* clinical structure it was never given? A controlled,
-synthetic-only test of the clinician half of Hacking's looping effect.
+Does an LLM treat an *invented* diagnostic category as real, and does it *fabricate* clinical structure
+it was never given? This repository is the **behavioral study (Study 1)** of the joint preprint
+**"Held but not heeded: causal dissociation of verbal acknowledgment and diagnostic behavior in a
+language model."** A controlled, synthetic-only, **preregistered** test of the clinician half of Ian
+Hacking's looping effect.
 
-See `PLAN.md` (preregistration) and `CLAUDE.md` (invariants + how to run).
+The fabricated category is **disprosexia narrativa** (narrative dysprosexia): a deliberately minimal
+name + one-line gloss, no committed symptom list. Descriptive content is held **byte-identical** across
+five legitimacy levels (L1 forum → L5 pseudo-DSM); only the *authority wrapper* escalates. What we
+measure is whether the model invents structure (criteria, treatments, differentials) it was never
+given, and whether that fabrication scales with source authority.
 
-## Quick start
-```bash
-pip install -r requirements.txt
-python src/check_invariants.py            # anti-circularity gate (must pass)
-python src/run_experiment.py --models m1,m2 --reps 5   # wire up query_model() first
-python src/score.py                       # wire up judge_response() (blinded)
-python src/analyze.py                     # H1–H4 + robustness
-python src/lingsign_hook.py               # H5 linguistic fingerprint
+> **Preregistered outcome (Phase 6; `prereg-v1` + amendments A1–A4).** On the single validated
+> confirmatory DV (`diagnosis`), the prespecified directional tests for **H1** (dose–response over
+> authority), **H2** (plausibility gating), and **H3** (anchor ceiling) were **not** supported; **H4**
+> (the "invented for a study" flag lowers uptake) **was**. Diagnosis was governed almost categorically
+> by case–category *fit*, not source authority. See [`phase6/RESULTS.md`](phase6/RESULTS.md).
+> `criteria_invented` was downgraded to **exploratory** (amendment A4) after it failed reliability.
+
+## The three-study program
+
+| Study | What | Where |
+|---|---|---|
+| **Study 1 — behavioral** | 7,200 runs; does the model diagnose the fabricated category? | **this repo** |
+| Study 2 — representational | Is the "fiction" status genuinely *held* in the model's workspace? | [workspace-program](https://github.com/bernalsuarezantonio-bit/workspace-program) |
+| Study 3 — causal | Ablating that representation cuts acknowledgment, not behavior | workspace-program |
+| **Manuscript** | `paper/preprint_held_but_not_heeded_v2.md` | workspace-program |
+
+The sibling repo also holds an **independent cold verification** of this study's numbers —
+`paper/COLD_VERIFICATION_BEHAVIORAL.md` (the confirmatory analysis re-derived in numpy, not re-run;
+**all 35 checks match**, 0 discrepancies).
+
+Start here: **[`CLAUDE.md`](CLAUDE.md)** (invariants) → **[`PLAN.md`](PLAN.md)** (preregistration) →
+**[`RUNBOOK.md`](RUNBOOK.md)** (how to run, phase by phase).
+
+---
+
+## Repository structure
+
+```
+reification-gradient/
+├── CLAUDE.md              Anti-circularity invariants (the contract the study cannot violate)
+├── PLAN.md                THE PREREGISTRATION (frozen at tag prereg-v1) + amendments A1–A4 (§9)
+├── RUNBOOK.md             Operator runbook: phase-by-phase, "the 5 things never delegated"
+├── LICENSE / LICENSE-CC-BY-4.0.txt / CITATION.cff
+├── requirements.txt · config_*.yaml     Dependencies + run configs (smoke + real)
+│
+├── materials/             STIMULI (CC-BY). Minimal seeds; content constant across levels.
+│   ├── disorders.yaml         The 4 disorder seeds (name + one-line gloss only)
+│   ├── vignettes.yaml         60 vignettes (20 high / 20 neutral / 20 low compatibility)
+│   ├── anchor_candidates.md   Real-anchor selection candidates
+│   └── legitimacy/            L1_forum → L5_pseudodsm authority wrappers (payload byte-identical)
+│
+├── scoring/               INSTRUMENTS (CC-BY): rubric, sealed judge prompt(s), seed lexicon
+│
+├── src/                   CODE (MIT)
+│   ├── check_invariants.py    Anti-circularity gate — MUST pass before any run
+│   ├── run_experiment.py / run_batch.py / providers.py   Experiment harness
+│   ├── score.py               Blinded LLM-judge scoring
+│   └── analyze.py / lingsign_hook.py   H1–H4 + robustness (H5 hook not run; RESULTS §1.7)
+│
+├── prompts/               Per-phase operator prompts (phase1 … phase6)
+│
+├── phase2/                PRE-FREEZE evidence
+│   ├── power_analysis/        POWER.md, POWER_R0b.md, CONTEXT_BUDGET.md → N=60/R=3, num_ctx=2048
+│   └── recognition_probe/     MODELS.md (sha256 digests), RECODE_LOG.md (DPDR anchor), coded data
+│
+├── phase4/                JUDGE VALIDATION
+│   └── validation/            AGREEMENT_RESULTS.md, ALPHA_PREDICTIONS.md, SEALED_* (mappings/scores)
+│
+├── phase6/                RESULTS
+│   ├── RESULTS.md             Confirmatory + exploratory single report (the study write-up)
+│   ├── *.py · scored_full.jsonl (7,200) · *_results.json · fig_*.csv · fig_pdiag_by_level.png
+│   └── verbatims.md           Illustrative fabrication verbatims (exploratory)
+│
+├── data/                  Run outputs: raw/ and scored/ (gitignored; regenerated by the harness)
+└── resultados_*/          Smoke-test and real-run logs/outputs
 ```
 
-## What you must wire up
-- `src/run_experiment.py: query_model()` — your model provider.
-- `src/score.py: judge_response()` — a blinded LLM judge (rubric in `scoring/rubric.md`).
-- `src/lingsign_hook.py: lingsign_features()` — your real LingSign extractor.
+`prereg/` is an empty placeholder: the preregistration itself lives in **`PLAN.md`** (frozen at tag
+`prereg-v1`).
 
-## Design in one line
-4 disorder types (plausible-fiction / real-anchor / incoherent-control / flagged-fiction)
-× 5 legitimacy levels × ≥2 model families. Content held constant; only authority escalates.
-The contrast **plausible-fiction vs incoherent-control** across levels is the core result
-(reification vs sycophancy).
+---
 
-Sandbox-only: no fabricated disorder content leaves this repo.
+## Verifying the custody chain
+
+The confirmatory record is a linear chain — **tag `prereg-v1` → `PLAN.md` → confirmatory data →
+scoring → results** — with the design frozen *before* the data existed. Each link is checkable from a
+clone (run from the repo root).
+
+**1 — Anti-circularity gate passes.** Seeds are minimal; the descriptive payload is byte-identical
+across L1–L5 (only wrappers differ). If this fails, the result is void.
+
+```bash
+python src/check_invariants.py        # expect: All hard invariants pass
+```
+
+**2 — The preregistration was frozen before the data.** The tag `prereg-v1` must be an ancestor of,
+and dated before, the confirmatory-data commit.
+
+```bash
+git show prereg-v1:PLAN.md | head -40                       # the sealed prereg text
+git log -1 --format='prereg-v1  %h %ci' prereg-v1^{commit}  # 4b2464f, 2026-07-13
+git log -1 --format='data       %h %ci' 770fa9c             # confirmatory run, 2026-07-14
+git merge-base --is-ancestor prereg-v1 770fa9c && echo "OK: prereg precedes data"
+```
+
+**3 — Data → scoring → results are provenance-stamped.** The chain of commits, each stamped in
+`phase6/RESULTS.md`:
+
+| link | commit | what |
+|---|---|---|
+| preregistration | `4b2464f` (tag `prereg-v1`) | design frozen (N=60/R=3, anchor DPDR, sealed params) |
+| confirmatory data | `770fa9c` | 7,200 responses |
+| judge scoring | `c4a5ce8` | gemma2:27b, sealed `scoring/judge_prompt.md` |
+| results | `64166cd` | `phase6/RESULTS.md` + analysis artifacts |
+
+```bash
+grep -nE 'prereg-v1|4b2464f|770fa9c|c4a5ce8|Semillas|digest' phase6/RESULTS.md | head
+```
+
+**4 — Models are digest-pinned; the judge is blind.** Generator/judge/co-rater weights are sha256-pinned
+in `phase2/recognition_probe/MODELS.md`; the judge receives only the aliased seed payload and aliased
+response (`scoring/judge_prompt.md` blinding contract; `src/score.py`).
+
+**5 — Independent cold verification (external repo).** The behavioral confirmatory analysis was
+re-derived from this repo's committed data in the sibling **workspace-program** repo —
+`paper/COLD_VERIFICATION_BEHAVIORAL.md` — reimplementing the estimator in numpy (not re-running
+`statsmodels`). It re-checks the same Gate-0 chain (`prereg-v1` → `4b2464f` → `770fa9c` → `c4a5ce8` →
+`64166cd`) and reports **all 35 checks match, 0 discrepancies**.
+
+---
+
+## Reproducing the run
+
+Full operator walkthrough (what you do vs. what the code does, and the locks not to delegate) is in
+**[`RUNBOOK.md`](RUNBOOK.md)**; the exact command sequence is in [`phase6/RESULTS.md`](phase6/RESULTS.md)
+§4. In brief:
+
+```bash
+pip install -r requirements.txt
+python src/check_invariants.py                            # gate (must pass)
+python src/run_batch.py --config config_tirada_real.yaml  # confirmatory run (7,200 calls)
+python phase6/score_full.py --model ollama_remote/gemma2:27b   # blinded judge scoring
+python phase6/analyze_confirmatory.py                     # the 4 primary tests
+```
+
+Two open-weight generator families run locally (mistral-small3.1:24b, qwen2.5:32b) via an Ollama
+endpoint declared in `.env` (not versioned; see `.env.example`).
+
+---
+
+## Ethics & scope
+
+Synthetic-only, sandbox-only. The fabricated category and all synthetic disorder content exist for
+controlled in-silico measurement and **never leave this repo** as real clinical claims (`PLAN.md` §7,
+`CLAUDE.md`). If it needs invented criteria to be diagnosed, that *is* the finding.
+
+## Licensing & citation
+
+Dual-licensed: **MIT** for code, **CC-BY-4.0** for materials, data, and documentation — see
+[`LICENSE`](LICENSE) for the exact scope of each. To cite, see [`CITATION.cff`](CITATION.cff).

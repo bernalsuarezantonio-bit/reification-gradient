@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: >-
+  If you use this repository (code, materials, or data), please cite it. If you
+  refer to the study itself, please cite the preprint under `preferred-citation`.
+title: >-
+  Reification Gradient: Study 1 (behavioral) of "Held but not heeded"
+abstract: >-
+  The behavioral study (Study 1) of a three-study preregistered program on whether a
+  language model treats an invented psychiatric category as real and fabricates
+  clinical structure it was never given. Two open-weight models evaluated 60 Spanish
+  clinical vignettes across 4 category conditions x 5 source-legitimacy levels
+  (7,200 runs). Diagnosis of the fabricated category "narrative dysprosexia" was
+  governed by case-category fit, not source authority; an explicit "invented for a
+  study" disclosure left diagnosis at ceiling while most responses acknowledged the
+  fiction in writing. Preregistered (tag prereg-v1) before the confirmatory run. The
+  representational and causal studies (Studies 2-3) and the manuscript are in the
+  sibling repository workspace-program.
+type: software
+authors:
+  - given-names: Antonio
+    family-names: Bernal Suárez
+    email: bernalsuarezantonio@gmail.com
+repository-code: 'https://github.com/bernalsuarezantonio-bit/reification-gradient'
+license:
+  - MIT
+  - CC-BY-4.0
+license-url: 'https://github.com/bernalsuarezantonio-bit/reification-gradient/blob/main/LICENSE'
+keywords:
+  - large language models
+  - looping effect
+  - reification
+  - psychiatric nosology
+  - sycophancy
+  - preregistration
+date-released: '2026-07-16'
+commit: prereg-v1
+references:
+  - type: software
+    title: 'workspace-program: representational & causal studies (Studies 2-3) + manuscript'
+    authors:
+      - given-names: Antonio
+        family-names: Bernal Suárez
+    repository-code: 'https://github.com/bernalsuarezantonio-bit/workspace-program'
+    notes: >-
+      Sibling repository holding Studies 2-3, the manuscript, and an independent cold
+      verification of this repo's Study 1 (paper/COLD_VERIFICATION_BEHAVIORAL.md).
+# --- Preprint ---
+# No preprint is posted yet. The joint manuscript
+# (workspace-program: paper/preprint_held_but_not_heeded_v2.md) states repositories
+# and DOIs will be added at submission. When it posts, fill in `doi`, `url`, `year`.
+# Do NOT ship a fabricated DOI.
+preferred-citation:
+  type: article
+  title: >-
+    Held but not heeded: causal dissociation of verbal acknowledgment and
+    diagnostic behavior in a language model
+  authors:
+    - given-names: Antonio
+      family-names: Bernal Suárez
+      email: bernalsuarezantonio@gmail.com
+  year: 2026
+  notes: >-
+    Preprint draft (v2), in preparation. This repository is the study's Study 1
+    (behavioral). Replace this note with the DOI and URL once the preprint is posted.
+  # doi: 10.XXXXX/XXXXXX      # TODO: add on preprint posting
+  # url: https://...          # TODO: add on preprint posting
