@@ -164,9 +164,8 @@ Dual-licensed: **MIT** for code, **CC-BY-4.0** for materials, data, and document
 [`LICENSE`](LICENSE) for the exact scope of each.
 
 **How to cite.** A machine-readable [`CITATION.cff`](CITATION.cff) is provided (repository archived on
-Zenodo, DOI [10.5281/zenodo.21623791](https://doi.org/10.5281/zenodo.21623791)). Until the preprint
-article has its own DOI, cite this repository as:
+Zenodo, DOI [10.5281/zenodo.21623791](https://doi.org/10.5281/zenodo.21623791)). Cite the preprint:
 
-> Bernal Suárez, A., & González Martín, A. M. (2026). *Reification Gradient: Study 1 (behavioral) of
-> "Held but not heeded"* [software and data]. https://github.com/bernalsuarezantonio-bit/reification-gradient
-> (Zenodo: 10.5281/zenodo.21623791)
+> Bernal Suárez, A., & González Martín, A. M. (2026). *Held but not heeded: causal dissociation of
+> verbal acknowledgment and diagnostic behavior in a language model*. Zenodo.
+> https://doi.org/10.5281/zenodo.21677024
