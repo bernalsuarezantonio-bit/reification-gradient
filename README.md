@@ -163,11 +163,10 @@ controlled in-silico measurement and **never leave this repo** as real clinical 
 Dual-licensed: **MIT** for code, **CC-BY-4.0** for materials, data, and documentation — see
 [`LICENSE`](LICENSE) for the exact scope of each.
 
-**How to cite.** Until the preprint is posted with a DOI, this README is the canonical citation source.
-Cite this repository as:
+**How to cite.** A machine-readable [`CITATION.cff`](CITATION.cff) is provided (repository archived on
+Zenodo, DOI [10.5281/zenodo.21623791](https://doi.org/10.5281/zenodo.21623791)). Until the preprint
+article has its own DOI, cite this repository as:
 
-> Bernal Suárez, A. (2026). *Reification Gradient: Study 1 (behavioral) of "Held but not heeded"*
-> [software and data]. https://github.com/bernalsuarezantonio-bit/reification-gradient
-
-The machine-readable `CITATION.cff` is temporarily disabled (kept as `CITATION.cff.disabled`) and will
-be re-enabled with the real DOI once the preprint is published.
+> Bernal Suárez, A., & González Martín, A. M. (2026). *Reification Gradient: Study 1 (behavioral) of
+> "Held but not heeded"* [software and data]. https://github.com/bernalsuarezantonio-bit/reification-gradient
+> (Zenodo: 10.5281/zenodo.21623791)
